@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL  -g -o CMakeFiles\\rendering_quickstart.dir\\main.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\main.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/main.cpp",
+  "output": "CMakeFiles/rendering_quickstart.dir/main.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DGLFW_DLL  -g -o CMakeFiles\\rendering_quickstart.dir\\glad.c.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\glad.c\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/glad.c",
+  "output": "CMakeFiles/rendering_quickstart.dir/glad.c.obj"
+}
+]
