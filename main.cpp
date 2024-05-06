@@ -54,8 +54,15 @@ int main()
         1, 2, 3  // second triangle
     };
 
-    unsigned int VAO;
+    float vertices_2[] = {
+        -0.8f, 0.5f, 0.0f,
+        0.5f, -0.5f, 0.0f,
+        -0.5f, -0.5f, 0.0f};
+
+    unsigned int VAO, VAO_2;
     glGenVertexArrays(1, &VAO);
+    glGenVertexArrays(1, &VAO_2);
+
     glBindVertexArray(VAO);
     // we create a VBO now, which is the memory space on the GPU First glObject we define
     unsigned int VBO;
@@ -67,6 +74,16 @@ int main()
     glGenBuffers(1, &EBO);
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, EBO);
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(indices), indices, GL_STATIC_DRAW);
+
+    glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 3 * sizeof(float), (void *)0);
+    glEnableVertexAttribArray(0);
+    glBindVertexArray(0); //
+
+    glBindVertexArray(VAO_2);
+    unsigned int VBO_2;
+    glGenBuffers(1, &VBO_2);
+    glBindBuffer(GL_ARRAY_BUFFER, VBO_2);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(vertices_2), vertices_2, GL_STATIC_DRAW);
 
     const char *vertexShaderSource = "#version 330 core\n"
                                      "layout (location = 0) in vec3 aPos;\n"
@@ -109,8 +126,11 @@ int main()
         // swap buffers for double buffer, using double buffers avoid flickering by showing the front buffer and working on the back buffer until the rendering is done
         glUseProgram(shaderProgram);
         glBindVertexArray(VAO);
-        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
-        glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
+        glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0); // Draw the first VAO using indices
+
+        glBindVertexArray(VAO_2);
+        glDrawArrays(GL_TRIANGLES, 0, 3);
+
         glfwSwapBuffers(window);
         glfwPollEvents();
     }
