@@ -292,6 +292,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/char_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/charconv.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/concept_check.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h \
@@ -299,6 +300,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/fstream.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/functional_hash.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/hash_bytes.h \
@@ -323,7 +325,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/bits/range_access.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/refwrap.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h \
+  C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_construct.h \
@@ -342,7 +344,6 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/cctype \
   C:/msys64/mingw64/include/c++/13.2.0/cerrno \
   C:/msys64/mingw64/include/c++/13.2.0/clocale \
-  C:/msys64/mingw64/include/c++/13.2.0/cmath \
   C:/msys64/mingw64/include/c++/13.2.0/cstddef \
   C:/msys64/mingw64/include/c++/13.2.0/cstdio \
   C:/msys64/mingw64/include/c++/13.2.0/cstdlib \
@@ -356,40 +357,30 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/ext/numeric_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/string_conversions.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
+  C:/msys64/mingw64/include/c++/13.2.0/fstream \
   C:/msys64/mingw64/include/c++/13.2.0/initializer_list \
   C:/msys64/mingw64/include/c++/13.2.0/ios \
   C:/msys64/mingw64/include/c++/13.2.0/iosfwd \
   C:/msys64/mingw64/include/c++/13.2.0/iostream \
   C:/msys64/mingw64/include/c++/13.2.0/istream \
-  C:/msys64/mingw64/include/c++/13.2.0/limits \
-  C:/msys64/mingw64/include/c++/13.2.0/math.h \
   C:/msys64/mingw64/include/c++/13.2.0/new \
   C:/msys64/mingw64/include/c++/13.2.0/ostream \
   C:/msys64/mingw64/include/c++/13.2.0/pstl/pstl_config.h \
+  C:/msys64/mingw64/include/c++/13.2.0/sstream \
   C:/msys64/mingw64/include/c++/13.2.0/stdexcept \
   C:/msys64/mingw64/include/c++/13.2.0/stdlib.h \
   C:/msys64/mingw64/include/c++/13.2.0/streambuf \
   C:/msys64/mingw64/include/c++/13.2.0/string \
   C:/msys64/mingw64/include/c++/13.2.0/string_view \
   C:/msys64/mingw64/include/c++/13.2.0/system_error \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/beta_function.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/ell_integral.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/exp_integral.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/gamma.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/hypergeometric.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/legendre_function.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/modified_bessel_func.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_hermite.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_laguerre.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/riemann_zeta.tcc \
-  C:/msys64/mingw64/include/c++/13.2.0/tr1/special_function_util.h \
   C:/msys64/mingw64/include/c++/13.2.0/tuple \
   C:/msys64/mingw64/include/c++/13.2.0/type_traits \
   C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
+  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
+  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++locale.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/ctype_base.h \
@@ -409,7 +400,6 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/limits.h \
   C:/msys64/mingw64/include/locale.h \
   C:/msys64/mingw64/include/malloc.h \
-  C:/msys64/mingw64/include/math.h \
   C:/msys64/mingw64/include/process.h \
   C:/msys64/mingw64/include/pthread.h \
   C:/msys64/mingw64/include/pthread_compat.h \
@@ -437,7 +427,8 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
-  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h
+  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
+  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/shader.h
 
 
 C:/msys64/mingw64/include/wchar.h:
@@ -456,8 +447,6 @@ C:/msys64/mingw64/include/pthread_time.h:
 
 C:/msys64/mingw64/include/pthread_compat.h:
 
-C:/msys64/mingw64/include/math.h:
-
 C:/msys64/mingw64/include/locale.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h:
@@ -470,21 +459,17 @@ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/ctype_inline.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/cpu_defines.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h:
+
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h:
+
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/typeinfo:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_hermite.tcc:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/modified_bessel_func.tcc:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/exp_integral.tcc:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc:
 
 C:/msys64/mingw64/include/c++/13.2.0/stdlib.h:
 
@@ -492,13 +477,11 @@ C:/msys64/mingw64/include/c++/13.2.0/stdexcept:
 
 C:/msys64/mingw64/include/c++/13.2.0/new:
 
-C:/msys64/mingw64/include/c++/13.2.0/math.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/limits:
-
 C:/msys64/mingw64/include/c++/13.2.0/iostream:
 
 C:/msys64/mingw64/include/c++/13.2.0/ios:
+
+C:/msys64/mingw64/include/c++/13.2.0/fstream:
 
 C:/msys64/mingw64/include/c++/13.2.0/ext/string_conversions.h:
 
@@ -514,8 +497,6 @@ C:/msys64/mingw64/include/c++/13.2.0/cstdlib:
 
 C:/msys64/mingw64/include/c++/13.2.0/cstdio:
 
-C:/msys64/mingw64/include/c++/13.2.0/cmath:
-
 C:/msys64/mingw64/include/c++/13.2.0/clocale:
 
 C:/msys64/mingw64/include/c++/13.2.0/cerrno:
@@ -525,6 +506,8 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h:
 C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf.tcc:
+
+C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/shader.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h:
 
@@ -608,6 +591,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xmmintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/x86intrin.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/x86gprintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/wmmintrin.h:
@@ -657,8 +642,6 @@ C:/msys64/mingw64/include/securitybaseapi.h:
 C:/msys64/mingw64/include/windef.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/tbmintrin.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/hypergeometric.tcc:
 
 C:/msys64/mingw64/include/sec_api/stralign_s.h:
 
@@ -732,8 +715,6 @@ C:/msys64/mingw64/include/_mingw_mac.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/type_traits:
 
-C:/msys64/mingw64/include/c++/13.2.0/tr1/special_function_util.h:
-
 C:/msys64/mingw64/include/ole2.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h:
@@ -780,6 +761,8 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.tcc:
 
 C:/msys64/mingw64/include/realtimeapiset.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/bits/fstream.tcc:
+
 C:/msys64/mingw64/include/interlockedapi.h:
 
 C:/msys64/mingw64/include/errhandlingapi.h:
@@ -798,11 +781,7 @@ C:/msys64/mingw64/include/processthreadsapi.h:
 
 C:/msys64/mingw64/include/poppack.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/tr1/legendre_function.tcc:
-
 C:/msys64/mingw64/include/concurrencysal.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/riemann_zeta.tcc:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/locale_facets.h:
 
@@ -823,10 +802,6 @@ C:/msys64/mingw64/include/cderr.h:
 C:/msys64/mingw64/include/ktmtypes.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/lzcntintrin.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/beta_function.tcc:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h:
 
 C:/msys64/mingw64/include/heapapi.h:
 
@@ -889,6 +864,8 @@ C:/msys64/mingw64/include/_mingw_unicode.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/cldemoteintrin.h:
 
 C:/msys64/mingw64/include/fibersapi.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/sstream:
 
 C:/msys64/mingw64/include/mmiscapi2.h:
 
@@ -983,10 +960,6 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h:
 C:/msys64/mingw64/include/minwindef.h:
 
 C:/msys64/mingw64/include/synchapi.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/poly_laguerre.tcc:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/gamma.tcc:
 
 C:/msys64/mingw64/include/urlmon.h:
 
@@ -1120,6 +1093,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/fmaintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512fp16intrin.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vlintrin.h:
 
 C:/msys64/mingw64/include/winbase.h:
@@ -1241,8 +1216,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mwaitintrin.h:
 C:/msys64/mingw64/include/basetsd.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mwaitxintrin.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/ell_integral.tcc:
 
 C:/msys64/mingw64/include/fltwinerror.h:
 
