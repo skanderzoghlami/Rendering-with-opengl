@@ -642,6 +642,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xmmintrin.h \
+  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/fly_camera.h \
   C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/shader.h \
   C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/stb_image.h
 
@@ -1407,6 +1408,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/vaesintrin.h:
 C:/msys64/mingw64/include/c++/13.2.0/cctype:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/vpclmulqdqintrin.h:
+
+C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/fly_camera.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/waitpkgintrin.h:
 

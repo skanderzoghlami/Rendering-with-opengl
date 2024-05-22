@@ -308,6 +308,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/glm/detail/type_half.inl \
  C:/msys64/mingw64/include/glm/integer.hpp \
  C:/msys64/mingw64/include/glm/detail/func_integer.inl \
+ C:\Users\skander\OneDrive\Bureau\OpenGL\ with\ python\real_rendering\fly_camera.h \
  C:/msys64/mingw64/include/glm/gtc/matrix_transform.hpp \
  C:/msys64/mingw64/include/glm/ext/matrix_projection.hpp \
  C:/msys64/mingw64/include/glm/gtc/constants.hpp \
