@@ -78,7 +78,7 @@ int main()
     // build and compile our shader zprogram
     // ------------------------------------
     Shader ourShader("Shaders/vs", "Shaders/fs"); // you can name your shader files however you like
-    Shader lightingShader("Shaders/Lighting/colors.vs", "Shaders/Lighting/colors.fs");
+    Shader lightingShader("Shaders/Textures/texture.vs", "Shaders/Textures/texture.fs");
     Shader lightCubeShader("Shaders/Lighting/light_cube.vs", "Shaders/Lighting/light_cube.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
@@ -138,7 +138,7 @@ int main()
     // position attribute
     glVertexAttribPointer(0, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)0);
     glEnableVertexAttribArray(0);
-    glVertexAttribPointer(1, 3 , GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)(3 * sizeof(float)));
+    glVertexAttribPointer(1, 3, GL_FLOAT, GL_FALSE, 6 * sizeof(float), (void *)(3 * sizeof(float)));
     glEnableVertexAttribArray(1);
 
     unsigned int lightCubeVAO;
@@ -174,6 +174,9 @@ int main()
         lightingShader.setVec3("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
         lightingShader.setVec3("lightPos", lightPos);
         lightingShader.setVec3("viewPos", camera.Position);
+        lightingShader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
+        lightingShader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f)); // darken the light a bit to fit the scene
+        lightingShader.setVec3("light.specular", glm::vec3(1.0f, 1.0f, 1.0f));
 
         // pass projection matrix to shader (note that in this case it could change every frame)
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
@@ -183,6 +186,10 @@ int main()
         lightingShader.setMat4("view", view);
         glm::mat4 model = glm::mat4(1.0f);
         lightingShader.setMat4("model", model);
+        lightingShader.setVec3("material.ambient", glm::vec3(1.0f, 0.5f, 0.31f));
+        lightingShader.setVec3("material.diffuse", glm::vec3(1.0f, 0.5f, 0.31f));
+        lightingShader.setVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
+        lightingShader.setFloat("material.shininess", 32.0f);
 
         glBindVertexArray(cubeVAO);
         glDrawArrays(GL_TRIANGLES, 0, 36);
