@@ -19,6 +19,7 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
 void processInput(GLFWwindow *window);
 unsigned int loadTexture(const char *path);
 
+
 // settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
@@ -32,8 +33,8 @@ bool firstMouse = true;
 // timing
 float deltaTime = 0.0f; // time between current frame and last frame
 float lastFrame = 0.0f;
-// lighting if directional we dont care about it
-// glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+// lighting
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 int main()
 {
@@ -80,7 +81,7 @@ int main()
     // build and compile our shader zprogram
     // ------------------------------------
     Shader ourShader("Shaders/vs", "Shaders/fs"); // you can name your shader files however you like
-    Shader lightingShader("Shaders/Lighting_LightCasters/lcaster.vs", "Shaders/Lighting_LightCasters/lcaster.fs");
+    Shader lightingShader("Shaders/LightingMaps/lmap.vs", "Shaders/LightingMaps/lmap.fs");
     Shader lightCubeShader("Shaders/Lighting/light_cube.vs", "Shaders/Lighting/light_cube.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
@@ -128,18 +129,6 @@ int main()
         0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 1.0f, 0.0f,
         -0.5f, 0.5f, 0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 0.0f,
         -0.5f, 0.5f, -0.5f, 0.0f, 1.0f, 0.0f, 0.0f, 1.0f};
-
-    glm::vec3 cubePositions[] = {
-        glm::vec3(0.0f, 0.0f, 0.0f),
-        glm::vec3(2.0f, 5.0f, -15.0f),
-        glm::vec3(-1.5f, -2.2f, -2.5f),
-        glm::vec3(-3.8f, -2.0f, -12.3f),
-        glm::vec3(2.4f, -0.4f, -3.5f),
-        glm::vec3(-1.7f, 3.0f, -7.5f),
-        glm::vec3(1.3f, -2.0f, -2.5f),
-        glm::vec3(1.5f, 2.0f, -2.5f),
-        glm::vec3(1.5f, 0.2f, -1.5f),
-        glm::vec3(-1.3f, 1.0f, -1.5f)};
 
     unsigned int VBO, cubeVAO;
     glGenVertexArrays(1, &cubeVAO);
@@ -193,8 +182,8 @@ int main()
 
         lightingShader.setVec3("objectColor", glm::vec3(1.0f, 0.5f, 0.31f));
         lightingShader.setVec3("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
-        // postions, no need for light pos as it it directional
-        lightingShader.setVec3("light.direction", glm::vec3(-0.2f, -1.0f, -0.3f));
+        // postions 
+        lightingShader.setVec3("lightPos", lightPos);
         lightingShader.setVec3("viewPos", camera.Position);
         // light properties
         lightingShader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
@@ -223,30 +212,20 @@ int main()
         glBindTexture(GL_TEXTURE_2D, specularMap);
 
         glBindVertexArray(cubeVAO);
-        for (unsigned int i = 0; i < 10; i++)
-        {
-            // calculate the model matrix for each object and pass it to shader before drawing
-            glm::mat4 model = glm::mat4(1.0f);
-            model = glm::translate(model, cubePositions[i]);
-            float angle = 20.0f * i;
-            model = glm::rotate(model, glm::radians(angle), glm::vec3(1.0f, 0.3f, 0.5f));
-            lightingShader.setMat4("model", model);
-
-            glDrawArrays(GL_TRIANGLES, 0, 36);
-        }
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
         lightCubeShader.use();
         lightCubeShader.setMat4("projection", projection);
         lightCubeShader.setMat4("view", view);
         // the light is dynamic using sin
-        // lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
-        // model = glm::mat4(1.0f);
-        // model = glm::translate(model, lightPos);
-        // model = glm::scale(model, glm::vec3(0.2f));
-        // lightCubeShader.setMat4("model", model);
+        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, lightPos);
+        model = glm::scale(model, glm::vec3(0.2f));
+        lightCubeShader.setMat4("model", model);
 
-        // glBindVertexArray(lightCubeVAO);
-        // glDrawArrays(GL_TRIANGLES, 0, 36);
+        glBindVertexArray(lightCubeVAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
@@ -323,11 +302,11 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset)
 
 // utility function for loading a 2D texture from file
 // ---------------------------------------------------
-unsigned int loadTexture(char const *path)
+unsigned int loadTexture(char const * path)
 {
     unsigned int textureID;
     glGenTextures(1, &textureID);
-
+    
     int width, height, nrComponents;
     unsigned char *data = stbi_load(path, &width, &height, &nrComponents, 0);
     if (data)
