@@ -33,7 +33,7 @@ bool firstMouse = true;
 float deltaTime = 0.0f; // time between current frame and last frame
 float lastFrame = 0.0f;
 // lighting if directional we dont care about it
-// glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
+glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 int main()
 {
@@ -80,7 +80,7 @@ int main()
     // build and compile our shader zprogram
     // ------------------------------------
     Shader ourShader("Shaders/vs", "Shaders/fs"); // you can name your shader files however you like
-    Shader lightingShader("Shaders/Lighting_LightCasters/lcaster.vs", "Shaders/Lighting_LightCasters/lcaster.fs");
+    Shader lightingShader("Shaders/Lighting_LightCasters/pointLight.vs", "Shaders/Lighting_LightCasters/pointLight.fs");
     Shader lightCubeShader("Shaders/Lighting/light_cube.vs", "Shaders/Lighting/light_cube.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
@@ -194,7 +194,6 @@ int main()
         lightingShader.setVec3("objectColor", glm::vec3(1.0f, 0.5f, 0.31f));
         lightingShader.setVec3("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
         // postions, no need for light pos as it it directional
-        lightingShader.setVec3("light.direction", glm::vec3(-0.2f, -1.0f, -0.3f));
         lightingShader.setVec3("viewPos", camera.Position);
         // light properties
         lightingShader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
@@ -203,7 +202,7 @@ int main()
 
         lightingShader.setInt("material.diffuse", 0);
         lightingShader.setInt("material.specular", 1);
-
+        lightingShader.setVec3("light.position", lightPos);
         // pass projection matrix to shader (note that in this case it could change every frame)
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         lightingShader.setMat4("projection", projection);
@@ -216,6 +215,10 @@ int main()
         lightingShader.setVec3("material.diffuse", glm::vec3(1.0f, 0.5f, 0.31f));
         lightingShader.setVec3("material.specular", glm::vec3(0.5f, 0.5f, 0.5f));
         lightingShader.setFloat("material.shininess", 32.0f);
+
+        lightingShader.setFloat("light.constant", 1.0f);
+        lightingShader.setFloat("light.linear", 0.09f);
+        lightingShader.setFloat("light.quadratic", 0.032f);
 
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, diffuseMap);
@@ -239,14 +242,14 @@ int main()
         lightCubeShader.setMat4("projection", projection);
         lightCubeShader.setMat4("view", view);
         // the light is dynamic using sin
-        // lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
-        // model = glm::mat4(1.0f);
-        // model = glm::translate(model, lightPos);
-        // model = glm::scale(model, glm::vec3(0.2f));
-        // lightCubeShader.setMat4("model", model);
+        lightPos.x = 1.0f + sin(glfwGetTime()) * 2.0f;
+        model = glm::mat4(1.0f);
+        model = glm::translate(model, lightPos);
+        model = glm::scale(model, glm::vec3(0.2f));
+        lightCubeShader.setMat4("model", model);
 
-        // glBindVertexArray(lightCubeVAO);
-        // glDrawArrays(GL_TRIANGLES, 0, 36);
+        glBindVertexArray(lightCubeVAO);
+        glDrawArrays(GL_TRIANGLES, 0, 36);
 
         // glfw: swap buffers and poll IO events (keys pressed/released, mouse moved etc.)
         // -------------------------------------------------------------------------------
