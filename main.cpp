@@ -80,7 +80,7 @@ int main()
     // build and compile our shader zprogram
     // ------------------------------------
     Shader ourShader("Shaders/vs", "Shaders/fs"); // you can name your shader files however you like
-    Shader lightingShader("Shaders/Lighting_LightCasters/pointLight.vs", "Shaders/Lighting_LightCasters/pointLight.fs");
+    Shader lightingShader("Shaders/Lighting_LightCasters/pointLight.vs", "Shaders/Lighting_LightCasters/spotlight.fs");
     Shader lightCubeShader("Shaders/Lighting/light_cube.vs", "Shaders/Lighting/light_cube.fs");
 
     // set up vertex data (and buffer(s)) and configure vertex attributes
@@ -195,6 +195,11 @@ int main()
         lightingShader.setVec3("lightColor", glm::vec3(1.0f, 1.0f, 1.0f));
         // postions, no need for light pos as it it directional
         lightingShader.setVec3("viewPos", camera.Position);
+        lightingShader.setVec3("light.position", camera.Position);
+        lightingShader.setVec3("light.direction", camera.Front);
+        lightingShader.setFloat("light.cutOff", glm::cos(glm::radians(12.5f)));
+        lightingShader.setFloat("light.outerCutOff", glm::cos(glm::radians(17.5f)));
+
         // light properties
         lightingShader.setVec3("light.ambient", glm::vec3(0.2f, 0.2f, 0.2f));
         lightingShader.setVec3("light.diffuse", glm::vec3(0.5f, 0.5f, 0.5f)); // darken the light a bit to fit the scene
@@ -202,7 +207,7 @@ int main()
 
         lightingShader.setInt("material.diffuse", 0);
         lightingShader.setInt("material.specular", 1);
-        lightingShader.setVec3("light.position", lightPos);
+
         // pass projection matrix to shader (note that in this case it could change every frame)
         glm::mat4 projection = glm::perspective(glm::radians(camera.Zoom), (float)SCR_WIDTH / (float)SCR_HEIGHT, 0.1f, 100.0f);
         lightingShader.setMat4("projection", projection);
