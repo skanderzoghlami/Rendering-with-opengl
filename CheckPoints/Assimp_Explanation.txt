@@ -1,0 +1,79 @@
+Assimp organizes the imported data in a hierarchical structure, with the `aiScene` object at the root. Here's a brief overview of the key components:
+
+- `aiScene`: This is the root object that represents the imported data. It contains an array of `aiMesh` objects, an array of `aiMaterial` objects, and a root node (`mRootNode`) that organizes the meshes in a tree structure.
+
+- `mRootNode`: This is the root of a tree structure of `aiNode` objects. Each `aiNode` represents a node in the scene graph. It contains transformations (relative to its parent node) and indices into the `aiScene`'s array of meshes that are associated with this node. Nodes can have child nodes, forming a tree structure that represents the hierarchical relationship between objects in the scene.
+
+- `mMeshes`: This is an array of `aiMesh` objects contained in the `aiScene`. Each `aiMesh` represents a single geometry or object in the 3D model. It contains an array of vertices, an array of faces (each face is a collection of indices into the vertex array), and an index to a material in the `aiScene`'s array of materials.
+
+- `mMaterials`: This is an array of `aiMaterial` objects contained in the `aiScene`. Each `aiMaterial` represents a material in the 3D model. It contains properties like the ambient color, diffuse color, specular color, shininess, and textures (diffuse, specular, normal, etc.).
+
+When you load a model with Assimp, you typically start with the `aiScene`. You can then traverse the node tree starting from `mRootNode` to get the transformation and meshes for each node. For each mesh, you can get its vertices, faces, and associated material. For each material, you can get its properties and textures.
+
+Here's a simplified view of the structure:
+
+```
+aiScene
+|
+|-- mRootNode
+|   |-- mTransformation
+|   |-- mMeshes (indices)
+|   |-- mChildren (other aiNodes)
+|
+|-- mMeshes (array of aiMesh)
+|   |-- mVertices
+|   |-- mFaces
+|   |-- mMaterialIndex
+|
+|-- mMaterials (array of aiMaterial)
+    |-- mProperties
+    |-- mTextures
+```
+
+
+say I have a mesh of a human, how would his body parts be divided in the hierarchy ??
+
+The hierarchy of a human mesh in a 3D model can vary depending on how the model was created. However, a common approach is to divide the human body into a hierarchy of bones or joints, which is especially useful for animation. This is often referred to as a skeleton or rig.
+
+Here's a simplified example of how the hierarchy might be structured:
+
+```
+Human
+|
+|-- Head
+|   |-- Eyes
+|   |-- Mouth
+|   |-- Nose
+|
+|-- Torso
+|   |-- Chest
+|   |-- Abdomen
+|
+|-- Arms
+|   |-- UpperArm
+|   |   |-- LowerArm
+|   |       |-- Hand
+|   |           |-- Fingers
+|
+|-- Legs
+    |-- UpperLeg
+    |   |-- LowerLeg
+    |       |-- Foot
+    |           |-- Toes
+```
+
+Each node in this hierarchy would be an `aiNode` in Assimp's data structure. The `mTransformation` of each node would represent the transformation of that body part relative to its parent. For example, the transformation of the `Hand` node would represent the position and orientation of the hand relative to the `LowerArm`.
+
+The `mMeshes` associated with each node would represent the geometry of that body part. For example, the meshes associated with the `Head` node might represent the geometry of the head.
+
+Please note that this is a simplified example. A real human mesh might have a much more complex hierarchy, with many more nodes representing smaller parts of the body, and multiple meshes for each body part to represent different levels of detail or different parts of the surface (skin, hair, clothing, etc.).
+
+for the head for example the mmesh of the head will have all the vertices faces of children ? and then in the children's mmeshes will have the same information from the aprents repeated again ?
+
+No, the `mMeshes` of a parent node (like the `Head` in your example) typically does not include the vertices and faces of its children nodes. Each `aiNode` in the hierarchy has its own transformation and its own set of meshes, and these meshes contain only the vertices and faces for that specific part of the model.
+
+In the case of a human model, the `mMeshes` of the `Head` node would contain only the vertices and faces that make up the geometry of the head. The `Eyes`, `Mouth`, and `Nose` nodes would have their own meshes that contain the vertices and faces for the eyes, mouth, and nose, respectively.
+
+The transformation of each node is relative to its parent, so to get the absolute position of a child node in the model, you would need to apply the transformations of all its parent nodes. But the vertices in the meshes are usually defined in the local coordinate system of the node, so they don't include the transformations of the parent nodes.
+
+This structure allows each part of the model to be transformed independently, which is useful for animation. For example, you can rotate the `Head` node to make the character look in different directions, without affecting the rest of the body. Or you can rotate the `LowerArm` node to make the character bend its elbow, without affecting the position or orientation of the hand or fingers.

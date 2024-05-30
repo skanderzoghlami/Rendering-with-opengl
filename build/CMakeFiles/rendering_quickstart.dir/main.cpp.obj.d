@@ -369,4 +369,29 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/math.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/emmintrin.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xmmintrin.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mmintrin.h
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mmintrin.h \
+ C:/msys64/mingw64/include/assimp/Importer.hpp \
+ C:/msys64/mingw64/include/assimp/types.h \
+ C:/msys64/mingw64/include/assimp/defs.h \
+ C:/msys64/mingw64/include/assimp/config.h \
+ C:/msys64/mingw64/include/assimp/vector2.h \
+ C:/msys64/mingw64/include/assimp/vector3.h \
+ C:/msys64/mingw64/include/assimp/color4.h \
+ C:/msys64/mingw64/include/assimp/matrix3x3.h \
+ C:/msys64/mingw64/include/assimp/matrix4x4.h \
+ C:/msys64/mingw64/include/assimp/quaternion.h \
+ C:/msys64/mingw64/include/assimp/vector2.inl \
+ C:/msys64/mingw64/include/assimp/vector3.inl \
+ C:/msys64/mingw64/include/assimp/color4.inl \
+ C:/msys64/mingw64/include/assimp/matrix3x3.inl \
+ C:/msys64/mingw64/include/c++/13.2.0/algorithm \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algo.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/algorithmfwd.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_heap.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/uniform_int_dist.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h \
+ C:/msys64/mingw64/include/c++/13.2.0/pstl/glue_algorithm_defs.h \
+ C:/msys64/mingw64/include/c++/13.2.0/pstl/execution_defs.h \
+ C:/msys64/mingw64/include/assimp/matrix4x4.inl \
+ C:/msys64/mingw64/include/assimp/MathFunctions.h \
+ C:/msys64/mingw64/include/assimp/quaternion.inl
