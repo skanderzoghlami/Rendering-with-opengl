@@ -1,0 +1,18 @@
+so to summerize, first I activate a texture either 0/1 ... 16, then I look the the name of the uniform in the shader and put the number indexing the texture (0...16) to it, after that I assign the id of the image to the currently active texture, am I correct ?
+
+
+
+
+Yes, you've got it right. Here's the process in a bit more detail:
+
+1. Activate a texture unit using `glActiveTexture(GL_TEXTURE0 + i)`. This sets the active texture unit to the one specified by the index `i`, which ranges from 0 to the maximum number of texture units (at least 16 guaranteed by OpenGL).
+
+2. Determine the type of the texture (diffuse, specular, normal, height) and assign a unique number to it. This number is used to differentiate between multiple textures of the same type.
+
+3. Get the location of the uniform sampler in the shader program using `glGetUniformLocation(shader.ID, (name + number).c_str())`. The uniform sampler is a variable in the shader that is used to sample the texture.
+
+4. Set the value of the uniform sampler to the index of the texture unit using `glUniform1i`. This tells the shader which texture unit to sample from when it uses this uniform sampler.
+
+5. Bind the texture to the currently active texture unit using `glBindTexture(GL_TEXTURE_2D, textures[i].id)`. This makes the texture available for the shader to sample from.
+
+After these steps, when the shader samples from the uniform sampler, it will be sampling from the texture that you bound to the corresponding texture unit.
