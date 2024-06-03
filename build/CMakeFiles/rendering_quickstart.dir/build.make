@@ -108,6 +108,8 @@ rendering_quickstart.exe: CMakeFiles/rendering_quickstart.dir/main.cpp.obj
 rendering_quickstart.exe: CMakeFiles/rendering_quickstart.dir/glad.c.obj
 rendering_quickstart.exe: CMakeFiles/rendering_quickstart.dir/build.make
 rendering_quickstart.exe: C:/msys64/mingw64/lib/libglfw3.dll.a
+rendering_quickstart.exe: C:/msys64/mingw64/lib/libassimp.dll.a
+rendering_quickstart.exe: C:/msys64/mingw64/lib/libz.dll.a
 rendering_quickstart.exe: CMakeFiles/rendering_quickstart.dir/linkLibs.rsp
 rendering_quickstart.exe: CMakeFiles/rendering_quickstart.dir/objects1.rsp
 rendering_quickstart.exe: CMakeFiles/rendering_quickstart.dir/link.txt
