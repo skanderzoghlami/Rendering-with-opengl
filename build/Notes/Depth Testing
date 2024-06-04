@@ -1,0 +1,11 @@
+- Depth testing is a functionality in openGL that allows us to create a buffer called z-buffer,
+- This buffer is similar in structure to the colors buffer, they both have the same size, 
+- color buffer contains colors of each fragment (r,g,b) for each [x,y]
+- Depth buffer contain a single value z for each [x,y]
+- this value is used when rendering to decide if we're gonna draw the fragment or not based on the distance of the fragment to the smallest distance in the zbuffer.
+- This functionality in glfw should be enabled, if not we're gonna see triangles drawn on top of each other in a pretty ugly way
+- We can also modify the arguments to this function GL_LESS / GL_EQUAL ... by default it's GL_LESS to see other visual effect
+- in fragment shader we can     FragColor = vec4(vec3(gl_FragCoord.z), 1.0); to vizualize the zbuffer
+- depth testing is far more important than just drawing things better, because in new hardware there's something called early depth testing which allow us to avoid running unecessary calls to the fragment shader, fregment shaders are so expensive cause they run on each fragment so it's better to reduce the calls as much as possible.
+- Z-fighting is an issue here, this issue appears when two object are so close and their triangles align, this makes it hard  to decide which one is closest, this creates an unconsistency that translates to visual artifacts, some ways to fight this is by using z-fighting techniques such as push the near plane further (not too much or you'll clip the near values), add an offset of distance between all objects and the final one is using a higher precision values (from 24 to 32) and many more techniques.
+- The function that calculates the depth isn't just the regular distance (which is linear), the preojction matrix does a magic trick to make it non linear, why you may ask ? well it's because we don't care a lot about the accuracy of the distances that are so far away what matters to us is the close ones so we need to give them more precision.

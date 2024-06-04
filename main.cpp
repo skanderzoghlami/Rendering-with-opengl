@@ -1,6 +1,5 @@
 #include <glad/glad.h>
 #include <GLFW/glfw3.h>
-#include "stb_image.h"
 
 #include "Model.h"
 #include "shader.h"
@@ -21,20 +20,16 @@ void scroll_callback(GLFWwindow *window, double xoffset, double yoffset);
 void processInput(GLFWwindow *window);
 unsigned int loadTexture(const char *path);
 
-// settings
+// Camera and Window settings
 const unsigned int SCR_WIDTH = 800;
 const unsigned int SCR_HEIGHT = 600;
-
-// camera
 Camera camera(glm::vec3(0.0f, 0.0f, 3.0f));
 float lastX = SCR_WIDTH / 2.0f;
 float lastY = SCR_HEIGHT / 2.0f;
 bool firstMouse = true;
-
-// timing
-float deltaTime = 0.0f; // time between current frame and last frame
+float deltaTime = 0.0f;  // Time is needed to make the movement smooth and undependent from the GPU
 float lastFrame = 0.0f;
-// lighting if directional we dont care about it
+// Where is the torch ??
 glm::vec3 lightPos(1.2f, 1.0f, 2.0f);
 
 int main()
@@ -49,9 +44,6 @@ int main()
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
 #endif
-
-    // glfw window creation
-    // --------------------
     GLFWwindow *window = glfwCreateWindow(SCR_WIDTH, SCR_HEIGHT, "LearnOpenGL", NULL, NULL);
     if (window == NULL)
     {
@@ -63,10 +55,8 @@ int main()
     glfwSetFramebufferSizeCallback(window, framebuffer_size_callback);
     glfwSetCursorPosCallback(window, mouse_callback);
     glfwSetScrollCallback(window, scroll_callback);
-
     // tell GLFW to capture our mouse
     glfwSetInputMode(window, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
-
     // glad: load all OpenGL function pointers
     // ---------------------------------------
     if (!gladLoadGLLoader((GLADloadproc)glfwGetProcAddress))
@@ -74,19 +64,20 @@ int main()
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
     }
-
-    // tell stb_image.h to flip loaded texture's on the y-axis (before loading model).
+    // tell stb_image.h to flip loaded texture's on the y-axis (before loading model). (x,y) => (i,j) 
     stbi_set_flip_vertically_on_load(true);
 
     // configure global opengl state
     // -----------------------------
     glEnable(GL_DEPTH_TEST);
+    glDepthFunc(GL_LESS);  
+
 
     // build and compile our shader program
     // ------------------------------------
     Shader ourShader("Shaders/Model_Loading/ml.vs", "Shaders/Model_Loading/ml.fs"); // you can name your shader files however you like
-    Model ourModel("3D_Models/backpack/backpack.obj");
-
+    // Model ourModel("3D_Models/backpack/backpack.obj");
+    Model ourModel("3D_Models/bistro_small/export.obj");
     // render loop
     // -----------
     while (!glfwWindowShouldClose(window))

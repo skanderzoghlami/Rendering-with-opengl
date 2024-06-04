@@ -12,36 +12,29 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h \
  C:/msys64/mingw64/include/stddef.h \
  C:/msys64/mingw64/include/GLFW/glfw3.h \
- C:\Users\skander\OneDrive\Bureau\OpenGL\ with\ python\real_rendering\stb_image.h \
- C:/msys64/mingw64/include/stdio.h \
- C:/msys64/mingw64/include/corecrt_stdio_config.h \
- C:/msys64/mingw64/include/_mingw_off_t.h \
- C:/msys64/mingw64/include/swprintf.inl \
- C:/msys64/mingw64/include/sec_api/stdio_s.h \
- C:/msys64/mingw64/include/c++/13.2.0/stdlib.h \
- C:/msys64/mingw64/include/c++/13.2.0/cstdlib \
+ C:\Users\skander\OneDrive\Bureau\OpenGL\ with\ python\real_rendering\Model.h \
+ C:/msys64/mingw64/include/glm/glm.hpp \
+ C:/msys64/mingw64/include/glm/detail/_fixes.hpp \
+ C:/msys64/mingw64/include/c++/13.2.0/cmath \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/os_defines.h \
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/cpu_defines.h \
  C:/msys64/mingw64/include/c++/13.2.0/pstl/pstl_config.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
+ C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
+ C:/msys64/mingw64/include/math.h \
+ C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h \
  C:/msys64/mingw64/include/stdlib.h \
  C:/msys64/mingw64/include/corecrt_wstdlib.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/limits.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
  C:/msys64/mingw64/include/limits.h \
  C:/msys64/mingw64/include/sec_api/stdlib_s.h \
+ C:/msys64/mingw64/include/c++/13.2.0/stdlib.h \
  C:/msys64/mingw64/include/malloc.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mm_malloc.h \
  C:/msys64/mingw64/include/errno.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h \
- C:\Users\skander\OneDrive\Bureau\OpenGL\ with\ python\real_rendering\Model.h \
- C:/msys64/mingw64/include/glm/glm.hpp \
- C:/msys64/mingw64/include/glm/detail/_fixes.hpp \
- C:/msys64/mingw64/include/c++/13.2.0/cmath \
- C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h \
- C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
- C:/msys64/mingw64/include/c++/13.2.0/ext/type_traits.h \
- C:/msys64/mingw64/include/math.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
  C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h \
@@ -76,6 +69,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/glm/detail/setup.hpp \
  C:/msys64/mingw64/include/c++/13.2.0/cassert \
  C:/msys64/mingw64/include/assert.h \
+ C:/msys64/mingw64/include/c++/13.2.0/cstdlib \
  C:/msys64/mingw64/include/c++/13.2.0/cstddef \
  C:/msys64/mingw64/include/glm/simd/platform.h \
  C:/msys64/mingw64/include/c++/13.2.0/cstdint \
@@ -225,6 +219,12 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/glm/ext/matrix_transform.hpp \
  C:/msys64/mingw64/include/glm/ext/matrix_transform.inl \
  C:/msys64/mingw64/include/glm/gtc/matrix_transform.inl \
+ C:\Users\skander\OneDrive\Bureau\OpenGL\ with\ python\real_rendering\stb_image.h \
+ C:/msys64/mingw64/include/stdio.h \
+ C:/msys64/mingw64/include/corecrt_stdio_config.h \
+ C:/msys64/mingw64/include/_mingw_off_t.h \
+ C:/msys64/mingw64/include/swprintf.inl \
+ C:/msys64/mingw64/include/sec_api/stdio_s.h \
  C:/msys64/mingw64/include/assimp/Importer.hpp \
  C:/msys64/mingw64/include/assimp/types.h \
  C:/msys64/mingw64/include/string.h \
