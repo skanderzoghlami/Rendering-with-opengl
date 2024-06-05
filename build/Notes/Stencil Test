@@ -1,0 +1,7 @@
+Stencil is another buffer, that looks like the depth buffer, but for each pixel we don't store the depth but we store a value that can be between 0 and 255.
+The stencil test is executed after the fragment shader, and its goal is like the depth test to discard some fragments to make the next steps in the rendering pipeline faster.
+Stencil buffer is a bit crazy, we update it however we want during rendering, but it looks like this generally:
+- Enable writing to the stencil buffer
+- Draw object 1 and update stencil buffer using it
+- Disable writing to stencil buffer
+- Draw object 2 but while discarding some fragments from stencil testing.
