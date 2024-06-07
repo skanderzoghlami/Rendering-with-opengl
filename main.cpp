@@ -83,6 +83,7 @@ int main()
     // -----------
     while (!glfwWindowShouldClose(window))
     {
+        glEnable(GL_CULL_FACE);
         glEnable(GL_STENCIL_TEST);
         glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
         glStencilFunc(GL_ALWAYS, 1, 0xFF); // all fragments should pass the stencil test

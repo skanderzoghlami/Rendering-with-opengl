@@ -286,8 +286,40 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/include/_mingw_stdarg.h
  C:/msys64/mingw64/include/_timeval.h
  C:/msys64/mingw64/include/assert.h
+ C:/msys64/mingw64/include/assimp/Compiler/poppack1.h
+ C:/msys64/mingw64/include/assimp/Compiler/pushpack1.h
+ C:/msys64/mingw64/include/assimp/Importer.hpp
+ C:/msys64/mingw64/include/assimp/MathFunctions.h
+ C:/msys64/mingw64/include/assimp/aabb.h
+ C:/msys64/mingw64/include/assimp/anim.h
+ C:/msys64/mingw64/include/assimp/camera.h
+ C:/msys64/mingw64/include/assimp/color4.h
+ C:/msys64/mingw64/include/assimp/color4.inl
+ C:/msys64/mingw64/include/assimp/config.h
+ C:/msys64/mingw64/include/assimp/defs.h
+ C:/msys64/mingw64/include/assimp/light.h
+ C:/msys64/mingw64/include/assimp/material.h
+ C:/msys64/mingw64/include/assimp/material.inl
+ C:/msys64/mingw64/include/assimp/matrix3x3.h
+ C:/msys64/mingw64/include/assimp/matrix3x3.inl
+ C:/msys64/mingw64/include/assimp/matrix4x4.h
+ C:/msys64/mingw64/include/assimp/matrix4x4.inl
+ C:/msys64/mingw64/include/assimp/mesh.h
+ C:/msys64/mingw64/include/assimp/metadata.h
+ C:/msys64/mingw64/include/assimp/postprocess.h
+ C:/msys64/mingw64/include/assimp/quaternion.h
+ C:/msys64/mingw64/include/assimp/quaternion.inl
+ C:/msys64/mingw64/include/assimp/scene.h
+ C:/msys64/mingw64/include/assimp/texture.h
+ C:/msys64/mingw64/include/assimp/types.h
+ C:/msys64/mingw64/include/assimp/vector2.h
+ C:/msys64/mingw64/include/assimp/vector2.inl
+ C:/msys64/mingw64/include/assimp/vector3.h
+ C:/msys64/mingw64/include/assimp/vector3.inl
+ C:/msys64/mingw64/include/c++/13.2.0/algorithm
  C:/msys64/mingw64/include/c++/13.2.0/backward/binders.h
  C:/msys64/mingw64/include/c++/13.2.0/bit
+ C:/msys64/mingw64/include/c++/13.2.0/bits/algorithmfwd.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/alloc_traits.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/allocator.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/basic_ios.h
@@ -301,6 +333,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/erase_if.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h
@@ -321,6 +354,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/13.2.0/bits/move.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/new_allocator.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/node_handle.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc
  C:/msys64/mingw64/include/c++/13.2.0/bits/ostream_insert.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/postypes.h
@@ -332,20 +366,31 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc
  C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algo.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_bvector.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_construct.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_function.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_heap.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_map.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_multimap.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_pair.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tree.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/stl_vector.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf.tcc
  C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf_iterator.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/string_view.tcc
  C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/uniform_int_dist.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator_args.h
  C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h
+ C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc
  C:/msys64/mingw64/include/c++/13.2.0/cassert
  C:/msys64/mingw64/include/c++/13.2.0/cctype
  C:/msys64/mingw64/include/c++/13.2.0/cerrno
@@ -363,6 +408,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h
  C:/msys64/mingw64/include/c++/13.2.0/debug/debug.h
  C:/msys64/mingw64/include/c++/13.2.0/exception
+ C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h
  C:/msys64/mingw64/include/c++/13.2.0/ext/alloc_traits.h
  C:/msys64/mingw64/include/c++/13.2.0/ext/atomicity.h
  C:/msys64/mingw64/include/c++/13.2.0/ext/numeric_traits.h
@@ -375,9 +421,12 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/13.2.0/iostream
  C:/msys64/mingw64/include/c++/13.2.0/istream
  C:/msys64/mingw64/include/c++/13.2.0/limits
+ C:/msys64/mingw64/include/c++/13.2.0/map
  C:/msys64/mingw64/include/c++/13.2.0/math.h
  C:/msys64/mingw64/include/c++/13.2.0/new
  C:/msys64/mingw64/include/c++/13.2.0/ostream
+ C:/msys64/mingw64/include/c++/13.2.0/pstl/execution_defs.h
+ C:/msys64/mingw64/include/c++/13.2.0/pstl/glue_algorithm_defs.h
  C:/msys64/mingw64/include/c++/13.2.0/pstl/pstl_config.h
  C:/msys64/mingw64/include/c++/13.2.0/sstream
  C:/msys64/mingw64/include/c++/13.2.0/stdexcept
@@ -401,6 +450,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/include/c++/13.2.0/tuple
  C:/msys64/mingw64/include/c++/13.2.0/type_traits
  C:/msys64/mingw64/include/c++/13.2.0/typeinfo
+ C:/msys64/mingw64/include/c++/13.2.0/vector
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h
  C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h
@@ -644,6 +694,9 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xmmintrin.h
+ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/Mesh.h
+ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/Model.h
+ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/shader.h
  C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/fly_camera.h
  C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/shader.h
  C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/stb_image.h

@@ -52,3 +52,68 @@ Sure, let's assume that the 3x3 matrix represents the pixels of an image, and yo
 
 This is a simplified example, but it should give you a good idea of how the stencil buffer works. In a real application, the stencil buffer would be the same size as the window, and you would use the stencil buffer to control the rendering of complex 3D models.
 ----------------------------------
+Sure, here's a step-by-step breakdown of the OpenGL function calls and the state of the stencil buffer:
+
+1. **Enable stencil testing and set up the stencil operation**:
+
+    ```c
+    glEnable(GL_STENCIL_TEST);
+    glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
+    ```
+
+    Initial stencil buffer:
+
+    ```
+    0 0 0
+    0 0 0
+    0 0 0
+    ```
+
+2. **Set the stencil function to always pass and render the model (middle pixel)**:
+
+    ```c
+    glStencilFunc(GL_ALWAYS, 1, 0xFF);
+    glStencilMask(0xFF);
+    // Render the model here
+    ```
+
+    Stencil buffer after rendering the model:
+
+    ```
+    0 0 0
+    0 1 0
+    0 0 0
+    ```
+
+3. **Change the stencil function to pass when the stencil buffer value is not equal to 1, disable writing to the stencil buffer, disable the depth test, and render the border**:
+
+    ```c
+    glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+    glStencilMask(0x00);
+    glDisable(GL_DEPTH_TEST);
+    // Render the border here
+    ```
+
+    Stencil buffer after rendering the border (it remains the same because writing to the stencil buffer is disabled):
+
+    ```
+    0 0 0
+    0 1 0
+    0 0 0
+    ```
+
+4. **Reset the stencil function and mask, and re-enable depth testing**:
+
+    ```c
+    glStencilMask(0xFF);
+    glStencilFunc(GL_ALWAYS, 0, 0xFF);
+    glEnable(GL_DEPTH_TEST);
+    ```
+
+    Final stencil buffer (it remains the same because no more rendering is done):
+
+    ```
+    0 0 0
+    0 1 0
+    0 0 0
+    ```
