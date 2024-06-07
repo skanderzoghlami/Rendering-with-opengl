@@ -284,40 +284,8 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/_mingw_stdarg.h \
   C:/msys64/mingw64/include/_timeval.h \
   C:/msys64/mingw64/include/assert.h \
-  C:/msys64/mingw64/include/assimp/Compiler/poppack1.h \
-  C:/msys64/mingw64/include/assimp/Compiler/pushpack1.h \
-  C:/msys64/mingw64/include/assimp/Importer.hpp \
-  C:/msys64/mingw64/include/assimp/MathFunctions.h \
-  C:/msys64/mingw64/include/assimp/aabb.h \
-  C:/msys64/mingw64/include/assimp/anim.h \
-  C:/msys64/mingw64/include/assimp/camera.h \
-  C:/msys64/mingw64/include/assimp/color4.h \
-  C:/msys64/mingw64/include/assimp/color4.inl \
-  C:/msys64/mingw64/include/assimp/config.h \
-  C:/msys64/mingw64/include/assimp/defs.h \
-  C:/msys64/mingw64/include/assimp/light.h \
-  C:/msys64/mingw64/include/assimp/material.h \
-  C:/msys64/mingw64/include/assimp/material.inl \
-  C:/msys64/mingw64/include/assimp/matrix3x3.h \
-  C:/msys64/mingw64/include/assimp/matrix3x3.inl \
-  C:/msys64/mingw64/include/assimp/matrix4x4.h \
-  C:/msys64/mingw64/include/assimp/matrix4x4.inl \
-  C:/msys64/mingw64/include/assimp/mesh.h \
-  C:/msys64/mingw64/include/assimp/metadata.h \
-  C:/msys64/mingw64/include/assimp/postprocess.h \
-  C:/msys64/mingw64/include/assimp/quaternion.h \
-  C:/msys64/mingw64/include/assimp/quaternion.inl \
-  C:/msys64/mingw64/include/assimp/scene.h \
-  C:/msys64/mingw64/include/assimp/texture.h \
-  C:/msys64/mingw64/include/assimp/types.h \
-  C:/msys64/mingw64/include/assimp/vector2.h \
-  C:/msys64/mingw64/include/assimp/vector2.inl \
-  C:/msys64/mingw64/include/assimp/vector3.h \
-  C:/msys64/mingw64/include/assimp/vector3.inl \
-  C:/msys64/mingw64/include/c++/13.2.0/algorithm \
   C:/msys64/mingw64/include/c++/13.2.0/backward/binders.h \
   C:/msys64/mingw64/include/c++/13.2.0/bit \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/algorithmfwd.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/alloc_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/allocator.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/basic_ios.h \
@@ -331,7 +299,6 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/erase_if.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception_defines.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/exception_ptr.h \
@@ -352,7 +319,6 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/bits/move.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/new_allocator.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/node_handle.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/ostream_insert.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/postypes.h \
@@ -364,31 +330,20 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/sstream.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algo.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_bvector.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_construct.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_function.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_heap.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_types.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_map.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_multimap.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stl_pair.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tree.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/stl_vector.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf_iterator.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/string_view.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/uniform_int_dist.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator_args.h \
   C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h \
-  C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc \
   C:/msys64/mingw64/include/c++/13.2.0/cassert \
   C:/msys64/mingw64/include/c++/13.2.0/cctype \
   C:/msys64/mingw64/include/c++/13.2.0/cerrno \
@@ -406,7 +361,6 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h \
   C:/msys64/mingw64/include/c++/13.2.0/debug/debug.h \
   C:/msys64/mingw64/include/c++/13.2.0/exception \
-  C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/alloc_traits.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/atomicity.h \
   C:/msys64/mingw64/include/c++/13.2.0/ext/numeric_traits.h \
@@ -419,12 +373,9 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/iostream \
   C:/msys64/mingw64/include/c++/13.2.0/istream \
   C:/msys64/mingw64/include/c++/13.2.0/limits \
-  C:/msys64/mingw64/include/c++/13.2.0/map \
   C:/msys64/mingw64/include/c++/13.2.0/math.h \
   C:/msys64/mingw64/include/c++/13.2.0/new \
   C:/msys64/mingw64/include/c++/13.2.0/ostream \
-  C:/msys64/mingw64/include/c++/13.2.0/pstl/execution_defs.h \
-  C:/msys64/mingw64/include/c++/13.2.0/pstl/glue_algorithm_defs.h \
   C:/msys64/mingw64/include/c++/13.2.0/pstl/pstl_config.h \
   C:/msys64/mingw64/include/c++/13.2.0/sstream \
   C:/msys64/mingw64/include/c++/13.2.0/stdexcept \
@@ -448,7 +399,6 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/include/c++/13.2.0/tuple \
   C:/msys64/mingw64/include/c++/13.2.0/type_traits \
   C:/msys64/mingw64/include/c++/13.2.0/typeinfo \
-  C:/msys64/mingw64/include/c++/13.2.0/vector \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h \
   C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h \
@@ -692,19 +642,12 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bure
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdint.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h \
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xmmintrin.h \
-  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/Mesh.h \
-  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/Model.h \
-  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/shader.h \
   C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/fly_camera.h \
   C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/shader.h \
   C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/stb_image.h
 
 
 C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/stb_image.h:
-
-C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/Model.h:
-
-C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/Mesh.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/float.h:
 
@@ -713,6 +656,8 @@ C:/msys64/mingw64/include/signal.h:
 C:/msys64/mingw64/include/sec_api/wchar_s.h:
 
 C:/msys64/mingw64/include/pthread_unistd.h:
+
+C:/msys64/mingw64/include/pthread_time.h:
 
 C:/msys64/mingw64/include/pthread_compat.h:
 
@@ -737,6 +682,8 @@ C:/msys64/mingw64/include/glm/mat3x4.hpp:
 C:/msys64/mingw64/include/glm/mat3x3.hpp:
 
 C:/msys64/mingw64/include/glm/mat3x2.hpp:
+
+C:/msys64/mingw64/include/glm/mat2x3.hpp:
 
 C:/msys64/mingw64/include/glm/mat2x2.hpp:
 
@@ -774,89 +721,9 @@ C:/msys64/mingw64/include/glm/ext/vector_uint1_sized.hpp:
 
 C:/msys64/mingw64/include/glm/ext/vector_uint1.hpp:
 
+C:/msys64/mingw64/include/glm/ext/vector_relational.hpp:
+
 C:/msys64/mingw64/include/glm/ext/vector_int4.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_int3.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_int2_sized.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_int2.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_int1_sized.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_int1.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_float4_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_float3_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_float3.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_float1_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_float1.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_double4_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_double4.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_double3_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_double3.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_double2_precision.hpp:
-
-C:/msys64/mingw64/include/pthread_signal.h:
-
-C:/msys64/mingw64/include/glm/ext/vector_double2.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_double1_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_double1.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_bool4_precision.hpp:
-
-C:/msys64/mingw64/include/sys/types.h:
-
-C:/msys64/mingw64/include/glm/ext/vector_bool4.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_bool3_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_bool3.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_bool2_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_bool2.hpp:
-
-C:/msys64/mingw64/include/glm/ext/vector_bool1_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/scalar_uint_sized.hpp:
-
-C:/msys64/mingw64/include/glm/ext/scalar_int_sized.hpp:
-
-C:/msys64/mingw64/include/glm/ext/scalar_constants.hpp:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_trigonometric.inl:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_transform.inl:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_transform.hpp:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_relational.inl:
-
-C:/msys64/mingw64/include/glm/ext/vector_float2.hpp:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_geometric.hpp:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_double_precision.hpp:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_double.hpp:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_common.hpp:
-
-C:/msys64/mingw64/include/glm/ext/matrix_transform.inl:
-
-C:/msys64/mingw64/include/glm/ext/matrix_transform.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h:
 
@@ -881,6 +748,10 @@ C:/msys64/mingw64/include/nb30.h:
 C:/msys64/mingw64/include/glm/ext/matrix_double3x3.hpp:
 
 C:/msys64/mingw64/include/wtypesbase.h:
+
+C:/msys64/mingw64/include/sys/types.h:
+
+C:/msys64/mingw64/include/glm/ext/vector_bool4.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/pconfigintrin.h:
 
@@ -928,17 +799,19 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stddef.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxvnniintrin.h:
 
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxvnniint8intrin.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vpopcntdqvlintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/serializeintrin.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_uninitialized.h:
-
-C:/msys64/mingw64/include/assimp/matrix4x4.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vpopcntdqintrin.h:
 
+C:/msys64/mingw64/include/corecrt_startup.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vp2intersectvlintrin.h:
+
+C:/msys64/mingw64/include/glm/ext/matrix_transform.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vnniintrin.h:
 
@@ -948,6 +821,8 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/amxbf16intrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vbmiintrin.h:
 
+C:/msys64/mingw64/include/glm/ext/quaternion_common.hpp:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vbmi2vlintrin.h:
 
 C:/msys64/mingw64/include/excpt.h:
@@ -955,6 +830,8 @@ C:/msys64/mingw64/include/excpt.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vbmi2intrin.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/stl_pair.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/istream:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/tmmintrin.h:
 
@@ -974,10 +851,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vlintrin.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/codecvt.h:
 
-C:/msys64/mingw64/include/glm/mat2x3.hpp:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_heap.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/fmaintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512fintrin.h:
@@ -990,11 +863,15 @@ C:/msys64/mingw64/include/guiddef.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/amxtileintrin.h:
 
+C:/msys64/mingw64/include/glm/ext/vector_float1_precision.hpp:
+
 C:/msys64/mingw64/include/glm/vector_relational.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/amxint8intrin.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/string:
+
+C:/msys64/mingw64/include/glm/ext/vector_float3.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/rdseedintrin.h:
 
@@ -1050,8 +927,6 @@ C:/msys64/mingw64/include/imm.h:
 
 C:/msys64/mingw64/include/wincrypt.h:
 
-C:/msys64/mingw64/include/assimp/material.inl:
-
 C:/msys64/mingw64/include/c++/13.2.0/bits/basic_ios.tcc:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_forced.h:
@@ -1082,8 +957,6 @@ C:/msys64/mingw64/include/timeapi.h:
 
 C:/msys64/mingw64/include/datetimeapi.h:
 
-C:/msys64/mingw64/include/assimp/quaternion.h:
-
 C:/msys64/mingw64/include/c++/13.2.0/debug/assertions.h:
 
 C:/msys64/mingw64/include/wchar.h:
@@ -1110,11 +983,9 @@ C:/msys64/mingw64/include/c++/13.2.0/string_view:
 
 C:/msys64/mingw64/include/namespaceapi.h:
 
-C:/msys64/mingw64/include/glm/ext/scalar_constants.inl:
-
-C:/msys64/mingw64/include/mcx.h:
-
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxifmaintrin.h:
+
+C:/msys64/mingw64/include/glm/ext/vector_bool3_precision.hpp:
 
 C:/msys64/mingw64/include/mciapi.h:
 
@@ -1142,9 +1013,9 @@ C:/msys64/mingw64/include/c++/13.2.0/bit:
 
 C:/msys64/mingw64/include/playsoundapi.h:
 
-C:/msys64/mingw64/include/specstrings.h:
+C:/msys64/mingw64/include/glm/ext/quaternion_trigonometric.inl:
 
-C:/msys64/mingw64/include/assimp/material.h:
+C:/msys64/mingw64/include/specstrings.h:
 
 C:/msys64/mingw64/include/winreg.h:
 
@@ -1194,13 +1065,19 @@ C:/msys64/mingw64/include/c++/13.2.0/sstream:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/cldemoteintrin.h:
 
+C:/msys64/mingw64/include/glm/ext/matrix_double2x2_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_float2.hpp:
+
+C:/msys64/mingw64/include/glm/ext/quaternion_geometric.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_bool4_precision.hpp:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/rtmintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/f16cintrin.h:
 
-C:/msys64/mingw64/include/glm/ext/vector_bool1.hpp:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/ammintrin.h:
+C:/msys64/mingw64/include/c++/13.2.0/cstdint:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/popcntintrin.h:
 
@@ -1256,6 +1133,8 @@ C:/msys64/mingw64/include/bemapiset.h:
 
 C:/msys64/mingw64/include/heapapi.h:
 
+C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h:
+
 C:/msys64/mingw64/include/c++/13.2.0/tr1/beta_function.tcc:
 
 C:/msys64/mingw64/include/sec_api/sys/timeb_s.h:
@@ -1278,6 +1157,8 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/locale_classes.h:
 
 C:/msys64/mingw64/include/cguid.h:
 
+C:/msys64/mingw64/include/glm/ext/vector_double2_precision.hpp:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx5124fmapsintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xsaveoptintrin.h:
@@ -1298,10 +1179,6 @@ C:/msys64/mingw64/include/glm/detail/type_vec4.inl:
 
 C:/msys64/mingw64/include/dde.h:
 
-C:/msys64/mingw64/include/glm/ext/quaternion_relational.hpp:
-
-C:/msys64/mingw64/include/_mingw.h:
-
 C:/msys64/mingw64/include/reason.h:
 
 C:/msys64/mingw64/include/sys/timeb.h:
@@ -1311,8 +1188,6 @@ C:/msys64/mingw64/include/handleapi.h:
 C:/msys64/mingw64/include/errhandlingapi.h:
 
 C:/msys64/mingw64/include/glm/ext/vector_uint4.hpp:
-
-C:/msys64/mingw64/include/assimp/texture.h:
 
 C:/msys64/mingw64/include/interlockedapi.h:
 
@@ -1345,6 +1220,8 @@ C:/msys64/mingw64/include/processthreadsapi.h:
 C:/msys64/mingw64/include/mmsyscom.h:
 
 C:/msys64/mingw64/include/glm/ext/matrix_float4x4_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_int3.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_double4x3.hpp:
 
@@ -1406,13 +1283,13 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512dqintrin.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/ostream:
 
+C:/msys64/mingw64/include/psdk_inc/_ip_types.h:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/cmpccxaddintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxintrin.h:
 
 C:/msys64/mingw64/include/glm/gtc/matrix_transform.inl:
-
-C:/msys64/mingw64/include/assimp/Compiler/pushpack1.h:
 
 C:/msys64/mingw64/include/rpcdcep.h:
 
@@ -1435,6 +1312,8 @@ C:/msys64/mingw64/include/joystickapi.h:
 C:/msys64/mingw64/include/glm/ext/matrix_projection.hpp:
 
 C:/msys64/mingw64/include/rpcnsip.h:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512bf16intrin.h:
 
 C:/msys64/mingw64/include/fltwinerror.h:
 
@@ -1504,9 +1383,11 @@ C:/msys64/mingw64/include/oleauto.h:
 
 C:/msys64/mingw64/include/stdarg.h:
 
-C:/msys64/mingw64/include/stralign.h:
+C:/msys64/mingw64/include/_mingw.h:
 
-C:/msys64/mingw64/include/assimp/matrix3x3.inl:
+C:/msys64/mingw64/include/glm/ext/quaternion_relational.hpp:
+
+C:/msys64/mingw64/include/stralign.h:
 
 C:/msys64/mingw64/include/winnetwk.h:
 
@@ -1515,6 +1396,8 @@ C:/msys64/mingw64/include/winioctl.h:
 C:/msys64/mingw64/include/c++/13.2.0/bits/functexcept.h:
 
 C:/msys64/mingw64/include/oaidl.h:
+
+C:/msys64/mingw64/include/glm/ext/vector_float1.hpp:
 
 C:/msys64/mingw64/include/mmiscapi.h:
 
@@ -1535,8 +1418,6 @@ C:/msys64/mingw64/include/_mingw_unicode.h:
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/wbnoinvdintrin.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512vnnivlintrin.h:
-
-C:/msys64/mingw64/include/assimp/vector3.inl:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/wmmintrin.h:
 
@@ -1582,107 +1463,17 @@ C:/msys64/mingw64/include/glm/detail/type_mat4x4.hpp:
 
 C:/msys64/mingw64/include/GLFW/glfw3.h:
 
-C:/msys64/mingw64/include/assimp/vector2.h:
-
 C:/msys64/mingw64/include/_mingw_stat64.h:
 
 C:/msys64/mingw64/include/winuser.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf_iterator.h:
 
+C:/msys64/mingw64/include/glm/ext/vector_bool1_precision.hpp:
+
 C:/msys64/mingw64/include/c++/13.2.0/iosfwd:
 
 C:/msys64/mingw64/include/assert.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/shaintrin.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/clocale:
-
-C:/msys64/mingw64/include/glm/ext/matrix_float4x4.hpp:
-
-C:/msys64/mingw64/include/c++/13.2.0/istream:
-
-C:/msys64/mingw64/include/assimp/Importer.hpp:
-
-C:/msys64/mingw64/include/assimp/MathFunctions.h:
-
-C:/msys64/mingw64/include/glm/ext/matrix_double2x2_precision.hpp:
-
-C:/msys64/mingw64/include/assimp/aabb.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h:
-
-C:/msys64/mingw64/include/minwinbase.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h:
-
-C:/msys64/mingw64/include/assimp/anim.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512bf16intrin.h:
-
-C:/msys64/mingw64/include/assimp/camera.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc:
-
-C:/msys64/mingw64/include/assimp/color4.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/cstdint:
-
-C:/msys64/mingw64/include/assimp/Compiler/poppack1.h:
-
-C:/msys64/mingw64/include/assimp/color4.inl:
-
-C:/msys64/mingw64/include/c++/13.2.0/stdlib.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h:
-
-C:/msys64/mingw64/include/assimp/config.h:
-
-C:/msys64/mingw64/include/shellapi.h:
-
-C:/msys64/mingw64/include/glm/ext/matrix_float4x3_precision.hpp:
-
-C:/msys64/mingw64/include/corecrt_startup.h:
-
-C:/msys64/mingw64/include/assimp/defs.h:
-
-C:/msys64/mingw64/include/pthread_time.h:
-
-C:/msys64/mingw64/include/assimp/light.h:
-
-C:/msys64/mingw64/include/assimp/matrix3x3.h:
-
-C:/msys64/mingw64/include/glm/ext/matrix_double2x4.hpp:
-
-C:/msys64/mingw64/include/assimp/mesh.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf.tcc:
-
-C:/msys64/mingw64/include/psdk_inc/_ip_types.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/algorithmfwd.h:
-
-C:/msys64/mingw64/include/glm/ext/vector_relational.hpp:
-
-C:/msys64/mingw64/include/assimp/postprocess.h:
-
-C:/msys64/mingw64/include/fibersapi.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h:
-
-C:/msys64/mingw64/include/assimp/quaternion.inl:
-
-C:/msys64/mingw64/include/c++/13.2.0/vector:
-
-C:/msys64/mingw64/include/assimp/scene.h:
-
-C:/msys64/mingw64/include/assimp/types.h:
-
-C:/msys64/mingw64/include/assimp/vector2.inl:
-
-C:/msys64/mingw64/include/assimp/vector3.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/algorithm:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/allocator.h:
 
@@ -1690,11 +1481,13 @@ C:/msys64/mingw64/include/glm/ext/vector_int4_sized.hpp:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/basic_string.h:
 
+C:/msys64/mingw64/include/glm/ext/quaternion_double_precision.hpp:
+
 C:/msys64/mingw64/include/c++/13.2.0/bits/cpp_type_traits.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/cxxabi_init_exception.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/bits/erase_if.h:
+C:/msys64/mingw64/include/glm/ext/vector_bool3.hpp:
 
 C:/msys64/mingw64/include/psdk_inc/_wsadata.h:
 
@@ -1714,12 +1507,6 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/istream.tcc:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/locale_classes.tcc:
 
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tree.h:
-
-C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avxvnniint8intrin.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/ext/aligned_buffer.h:
-
 C:/msys64/mingw64/include/c++/13.2.0/bits/localefwd.h:
 
 C:/msys64/mingw64/include/time.h:
@@ -1738,9 +1525,11 @@ C:/msys64/mingw64/include/c++/13.2.0/cstddef:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/nested_exception.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/bits/node_handle.h:
-
 C:/msys64/mingw64/include/c++/13.2.0/bits/ostream.tcc:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/ammintrin.h:
+
+C:/msys64/mingw64/include/glm/ext/vector_bool1.hpp:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/postypes.h:
 
@@ -1750,8 +1539,6 @@ C:/msys64/mingw64/include/c++/13.2.0/debug/debug.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/predefined_ops.h:
 
-C:/msys64/mingw64/include/assimp/matrix4x4.inl:
-
 C:/msys64/mingw64/include/c++/13.2.0/bits/ptr_traits.h:
 
 C:/msys64/mingw64/include/glm/ext/quaternion_float_precision.hpp:
@@ -1760,33 +1547,25 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator_args.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/std_abs.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/pstl/glue_algorithm_defs.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algo.h:
-
 C:/msys64/mingw64/include/math.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/tsxldtrkintrin.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/stl_algobase.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_bvector.h:
-
 C:/msys64/mingw64/include/c++/13.2.0/bits/stl_construct.h:
+
+C:/msys64/mingw64/include/glm/ext/matrix_transform.inl:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/stl_function.h:
 
-C:/msys64/mingw64/include/glm/ext/quaternion_common.inl:
+C:/msys64/mingw64/include/c++/13.2.0/bits/stl_iterator_base_funcs.h:
 
-C:/msys64/mingw64/include/glm/detail/type_mat2x2.inl:
+C:/msys64/mingw64/include/minwinbase.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/cassert:
+C:/msys64/mingw64/include/c++/13.2.0/bits/uses_allocator.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_map.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_multimap.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_vector.h:
+C:/msys64/mingw64/include/c++/13.2.0/bits/streambuf.tcc:
 
 C:/msys64/mingw64/include/threadpoollegacyapiset.h:
 
@@ -1794,11 +1573,19 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/stringfwd.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/utility.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/bits/vector.tcc:
+C:/msys64/mingw64/include/c++/13.2.0/cassert:
+
+C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/shaintrin.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/clocale:
+
+C:/msys64/mingw64/include/glm/ext/matrix_float4x4.hpp:
 
 C:/msys64/mingw64/include/c++/13.2.0/cfloat:
 
 C:/msys64/mingw64/include/glm/detail/type_mat3x3.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_bool2_precision.hpp:
 
 C:/msys64/mingw64/include/c++/13.2.0/climits:
 
@@ -1810,11 +1597,7 @@ C:/msys64/mingw64/include/c++/13.2.0/cstdlib:
 
 C:/msys64/mingw64/include/c++/13.2.0/cstring:
 
-C:/msys64/mingw64/include/glm/ext/matrix_projection.inl:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/uniform_int_dist.h:
-
-C:/msys64/mingw64/include/c++/13.2.0/fstream:
+C:/msys64/mingw64/include/glm/ext/vector_int1.hpp:
 
 C:/msys64/mingw64/include/c++/13.2.0/cwchar:
 
@@ -1840,15 +1623,7 @@ C:/msys64/mingw64/include/c++/13.2.0/ios:
 
 C:/msys64/mingw64/include/c++/13.2.0/iostream:
 
-C:/msys64/mingw64/include/glm/ext/vector_float2_precision.hpp:
-
-C:/msys64/mingw64/include/c++/13.2.0/limits:
-
 C:/msys64/mingw64/include/glm/detail/func_common.inl:
-
-C:/msys64/mingw64/include/c++/13.2.0/map:
-
-C:/msys64/mingw64/include/glm/detail/compute_vector_relational.hpp:
 
 C:/msys64/mingw64/include/c++/13.2.0/math.h:
 
@@ -1864,6 +1639,10 @@ C:/msys64/mingw64/include/c++/13.2.0/new:
 
 C:/msys64/mingw64/include/c++/13.2.0/stdexcept:
 
+C:/msys64/mingw64/include/c++/13.2.0/stdlib.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/tr1/bessel_function.tcc:
+
 C:/msys64/mingw64/include/c++/13.2.0/tr1/exp_integral.tcc:
 
 C:/msys64/mingw64/include/c++/13.2.0/tr1/modified_bessel_func.tcc:
@@ -1876,6 +1655,10 @@ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/basic_file.h:
 
+C:/msys64/mingw64/include/pthread_signal.h:
+
+C:/msys64/mingw64/include/glm/ext/vector_double2.hpp:
+
 C:/msys64/mingw64/include/glm/gtc/matrix_transform.hpp:
 
 C:/msys64/mingw64/include/debugapi.h:
@@ -1886,13 +1669,13 @@ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++allocator.h:
 
 C:/msys64/mingw64/include/glm/ext/matrix_float3x2_precision.hpp:
 
+C:/msys64/mingw64/include/glm/ext/scalar_int_sized.hpp:
+
 C:/msys64/mingw64/include/c++/13.2.0/bits/requires_hosted.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h:
 
 C:/msys64/mingw64/include/oleidl.h:
-
-C:/msys64/mingw64/include/assimp/metadata.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++io.h:
 
@@ -1904,13 +1687,13 @@ C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr-default.h:
 
+C:/msys64/mingw64/include/fibersapi.h:
+
+C:/msys64/mingw64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h:
+
 C:/msys64/mingw64/include/float.h:
 
 C:/msys64/mingw64/include/glm/detail/type_vec2.inl:
-
-C:/msys64/mingw64/include/glm/ext/quaternion_geometric.inl:
-
-C:/msys64/mingw64/include/glm/detail/_fixes.hpp:
 
 C:/msys64/mingw64/include/winsvc.h:
 
@@ -1918,11 +1701,11 @@ C:/msys64/mingw64/include/glm/detail/type_vec3.inl:
 
 C:/msys64/mingw64/include/glm/detail/compute_common.hpp:
 
+C:/msys64/mingw64/include/glm/detail/compute_vector_relational.hpp:
+
 C:/msys64/mingw64/include/glm/vec3.hpp:
 
 C:/msys64/mingw64/include/glm/detail/func_geometric.inl:
-
-C:/msys64/mingw64/include/c++/13.2.0/bits/stl_tempbuf.h:
 
 C:/msys64/mingw64/include/glm/detail/func_packing.inl:
 
@@ -1958,8 +1741,6 @@ C:/msys64/mingw64/include/glm/detail/type_mat3x4.inl:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/stdarg.h:
 
-C:/msys64/mingw64/include/c++/13.2.0/pstl/execution_defs.h:
-
 C:/msys64/mingw64/include/glm/detail/type_mat4x2.hpp:
 
 C:/msys64/mingw64/include/glm/ext/vector_float4.hpp:
@@ -1978,11 +1759,19 @@ C:/msys64/mingw64/include/glm/detail/type_mat3x4.hpp:
 
 C:/msys64/mingw64/include/glm/detail/type_vec3.hpp:
 
+C:/msys64/mingw64/include/glm/ext/vector_double1_precision.hpp:
+
 C:/msys64/mingw64/include/glm/ext/matrix_clip_space.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_double2x2.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_double2x3.hpp:
+
+C:/msys64/mingw64/include/c++/13.2.0/limits:
+
+C:/msys64/mingw64/include/glm/ext/vector_float2_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/matrix_double2x4.hpp:
 
 C:/msys64/mingw64/include/c++/13.2.0/system_error:
 
@@ -1996,11 +1785,17 @@ C:/msys64/mingw64/include/glm/ext/matrix_double3x2_precision.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_double4x2.hpp:
 
+C:/msys64/mingw64/include/c++/13.2.0/fstream:
+
+C:/msys64/mingw64/include/glm/ext/matrix_projection.inl:
+
 C:/msys64/mingw64/include/glm/ext/matrix_double4x3_precision.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_double4x4.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_float2x3.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_double4.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/x86gprintrin.h:
 
@@ -2015,3 +1810,51 @@ C:/msys64/mingw64/include/glm/ext/matrix_float3x4.hpp:
 C:/msys64/mingw64/include/glm/ext/matrix_float3x4_precision.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_float4x2.hpp:
+
+C:/msys64/mingw64/include/shellapi.h:
+
+C:/msys64/mingw64/include/glm/ext/matrix_float4x3_precision.hpp:
+
+C:/msys64/mingw64/include/glm/detail/type_mat2x2.inl:
+
+C:/msys64/mingw64/include/glm/ext/quaternion_common.inl:
+
+C:/msys64/mingw64/include/glm/ext/quaternion_double.hpp:
+
+C:/msys64/mingw64/include/glm/detail/_fixes.hpp:
+
+C:/msys64/mingw64/include/glm/ext/quaternion_geometric.inl:
+
+C:/msys64/mingw64/include/glm/ext/quaternion_relational.inl:
+
+C:/msys64/mingw64/include/glm/ext/quaternion_transform.hpp:
+
+C:/msys64/mingw64/include/glm/ext/quaternion_transform.inl:
+
+C:/msys64/mingw64/include/glm/ext/scalar_constants.hpp:
+
+C:/msys64/mingw64/include/mcx.h:
+
+C:/msys64/mingw64/include/glm/ext/scalar_constants.inl:
+
+C:/msys64/mingw64/include/glm/ext/scalar_uint_sized.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_bool2.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_double1.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_double3.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_double3_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_double4_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_float3_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_float4_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_int1_sized.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_int2.hpp:
+
+C:/msys64/mingw64/include/glm/ext/vector_int2_sized.hpp:

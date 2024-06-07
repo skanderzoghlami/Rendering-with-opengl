@@ -5,3 +5,50 @@ Stencil buffer is a bit crazy, we update it however we want during rendering, bu
 - Draw object 1 and update stencil buffer using it
 - Disable writing to stencil buffer
 - Draw object 2 but while discarding some fragments from stencil testing.
+----------------------------------
+Sure, let's assume that the 3x3 matrix represents the pixels of an image, and you want to draw the middle pixel. Here's how the stencil buffer would look at each iteration:
+
+1. **Initial state**: The stencil buffer is cleared to 0.
+
+    ```
+    0 0 0
+    0 0 0
+    0 0 0
+    ```
+
+2. **After rendering the model (middle pixel)**: The stencil function is set to always pass, and the reference value is set to 1. So, when you render the middle pixel (the model), the stencil buffer is updated with the reference value at the corresponding position.
+
+    ```
+    0 0 0
+    0 1 0
+    0 0 0
+    ```
+
+3. **After rendering the border**: The stencil function is set to pass when the stencil buffer value is not equal to 1. So, when you render the border, the stencil buffer is not updated (because writing to the stencil buffer is disabled), but the border is only drawn where the stencil buffer value is not 1.
+
+    The stencil buffer still looks like this:
+
+    ```
+    0 0 0
+    0 1 0
+    0 0 0
+    ```
+
+    But the image looks like this (B represents the border, M represents the model):
+
+    ```
+    B B B
+    B M B
+    B B B
+    ```
+
+4. **Final state**: The stencil function is reset to always pass, and the stencil mask is reset to allow writing to the stencil buffer. The stencil buffer still looks the same, but you can now render other objects, and the stencil buffer will be updated according to the stencil function and mask.
+
+    ```
+    0 0 0
+    0 1 0
+    0 0 0
+    ```
+
+This is a simplified example, but it should give you a good idea of how the stencil buffer works. In a real application, the stencil buffer would be the same size as the window, and you would use the stencil buffer to control the rendering of complex 3D models.
+----------------------------------
