@@ -190,7 +190,7 @@ int main()
     // -------------
     unsigned int cubeTexture = loadTexture("textures/marble.jpg");
     unsigned int floorTexture = loadTexture("textures/metal.png");
-    unsigned int transparentTexture = loadTexture("textures/grass.png");
+    unsigned int transparentTexture = loadTexture("textures/window.png");
 
     // transparent window locations
     // --------------------------------

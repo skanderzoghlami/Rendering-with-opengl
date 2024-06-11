@@ -11,6 +11,6 @@ void main() {
     vec3 I = normalize(Position - cameraPos);
     vec3 Reflect = reflect(I, normalize(Normal));
     vec3 Refract = refract(I, normalize(Normal) , 0.5);
-    vec3 R = Reflect ;
+    vec3 R = Refract ;
     FragColor = vec4(texture(skybox, R).rgb, 1.0);
 }
