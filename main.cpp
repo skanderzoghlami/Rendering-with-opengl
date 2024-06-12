@@ -73,6 +73,9 @@ int main()
     {
         std::cout << "Failed to initialize GLAD" << std::endl;
         return -1;
+    } else{
+        const GLubyte* renderer = glGetString(GL_RENDERER); 
+        std::cout << "Rendering on GPU: " << renderer << std::endl;
     }
 
     // configure global opengl state
@@ -231,7 +234,8 @@ int main()
             sorted[distance] = windows[i];
         }
 
-        // render
+        // render 
+        
         // ------
         glClearColor(0.1f, 0.1f, 0.1f, 1.0f);
         glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
