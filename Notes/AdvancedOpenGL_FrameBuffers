@@ -1,0 +1,6 @@
+First we explain the framebuffers, instead of writing to the screen, we can write to a texture image that we can use later to post-process the scene_intersect
+Shaders: screen fragment shader takes vertices data and tex coords and render the scene to an image
+         Scene fragment shader takes same vertices and same tex coords but render the scene to the window, it uses the 2D texture of the scene to render stuff
+Now we render the scene to the framebuffer, the output will be a 2D texture of the scene.
+now we define a big cube that covers the scene, and we render this cube with textures from the created texture ! advantage here is the texture itself, we can 
+do operations on it since its just an image and when we render we'll have the desired effect.
