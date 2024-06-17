@@ -4,3 +4,7 @@ gl_PointSize => Render points, and control the size of each point / gl_VertexID 
 gl_FragCoord => coordinate of the current fragment, x,y for the screen coordinates, z for the depth
 gl_FrontFacing => True if the current fragment is part of a front facing face, False otherwise
 gl_FragDepth => same as gl_FragCoord BUT, gl_FragCoord is read only, this allows us to modify the depth of the fragment, if we write this line, opengl disables early rendering ( this can be controlled by specific conditions to not always do it )
+- We can pass many out values using interface blocks, and then pass them to the next shader, it looks pretty much like a struct:
+out OUT_VS { vec2 TextCoords; } out_vs; 
+in  OUT_VS [ vec2 TextCoords; ] in_fs ;
+- There's also uniform blocks, we use them when we talk about uniform buffer objects, we set them once and they can be used by all shader programs for any object we want.
