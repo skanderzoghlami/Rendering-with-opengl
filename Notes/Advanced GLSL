@@ -8,3 +8,7 @@ gl_FragDepth => same as gl_FragCoord BUT, gl_FragCoord is read only, this allows
 out OUT_VS { vec2 TextCoords; } out_vs; 
 in  OUT_VS [ vec2 TextCoords; ] in_fs ;
 - There's also uniform blocks, we use them when we talk about uniform buffer objects, we set them once and they can be used by all shader programs for any object we want.
+the advanced part is how to use those uniform blocks, we need to alocate the space occupied by each data type in the struct we're creating, to do that
+we need to define a layout (std140) for example, this has some conventions on how to pass data and you can calculate how much memory you should allocate using the 
+table defined by the std140 convention, then in the shader you tell opengl that you're using std140 conventions and it will understand how to allocate
+the memory.
