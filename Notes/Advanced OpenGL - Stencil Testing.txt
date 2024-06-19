@@ -117,3 +117,17 @@ Sure, here's a step-by-step breakdown of the OpenGL function calls and the state
     0 1 0
     0 0 0
     ```
+
+
+WHY WE NEED ALL THIS (STENCIL/DEPTH TESTING)
+so we executed the very expansive fragment shader on all fragments, then we discarded some of them thanks to depth/stencil testing, now what do we win ? which operations that were so expansive are now no longer eecuted 
+
+After the fragment shader has been executed and the depth/stencil testing has discarded some fragments, you've essentially saved on the following operations:
+
+1. **Color Blending**: If a fragment is discarded, the GPU doesn't need to perform blending operations with the existing color in the framebuffer. Blending involves reading the current color from the framebuffer, combining it with the new color, and then writing the result back to the framebuffer. This can be a costly operation, especially in scenes with a lot of overdraw.
+
+2. **Framebuffer Writes**: Writing the final color of a fragment to the framebuffer is a memory operation that can be quite expensive, especially at high resolutions where there are many pixels. By discarding fragments early, you reduce the number of these operations.
+
+3. **Bandwidth**: Both of the above operations involve memory transfers, which consume bandwidth. By reducing the number of fragments that need to be processed, you can reduce the overall memory bandwidth usage, which can be a significant performance gain on hardware where bandwidth is a limiting factor.
+
+So, while the fragment shader is still executed for all fragments, depth and stencil testing can help to reduce the overall workload on the GPU by eliminating unnecessary work for fragments that won't contribute to the final image.

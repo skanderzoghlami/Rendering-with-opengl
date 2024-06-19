@@ -1,0 +1,7 @@
+When we render an object, we have a 3D Model of it (set of vertices + attributes), for each model we want to render, we charge it's VAO then VBO then the shader we wanna use then call draw, draw takes the vertices from CPU to GPU on the common bus between them, this part is slow, the bus is very slow(bandwidth issue), we need to limit this operation as much as possible.
+
+In the case of this chapter we want to render a same object many times but at different positions, if we loop over the object many times and each time we draw it, it's bad because we'll be passing many times in the slow bus ! what if we call draw one time and draw many instances of the same object ?? that's exactly what instancing is, and the only thing that changes is the function we're calling, instead of calling draw we call drawInstance and pass the number of instances we want, ofc this wont be sufficient cause by default this will draw the instances in the same location, and that's why we go to the vertex shader and we use gl_InstanceID which allows us to do certain operations based on the Id of the current instance.
+
+After that for each instance we wanna draw we pass a translation vector in the table of uniforms that we pass to the shader, that way we render the object at the position offsetted by the index of the instance !
+
+But hey !! the number of uniforms we can pass to a shader is limited ! that's why we use another method which is:
