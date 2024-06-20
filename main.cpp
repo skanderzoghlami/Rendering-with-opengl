@@ -42,9 +42,9 @@ int main()
     glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
     glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
     glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
-
 #ifdef __APPLE__
     glfwWindowHint(GLFW_OPENGL_FORWARD_COMPAT, GL_TRUE);
+    
 #endif
 
     // glfw window creation
@@ -54,6 +54,7 @@ int main()
     {
         std::cout << "Failed to create GLFW window" << std::endl;
         glfwTerminate();
+        
         return -1;
     }
     glfwMakeContextCurrent(window);
@@ -75,6 +76,8 @@ int main()
     // configure global opengl state
     // -----------------------------
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_MULTISAMPLE);  
+
 
     // build and compile shaders
     // -------------------------
@@ -84,11 +87,11 @@ int main()
     // load models
     // -----------
     Model rock("3D_Models/rock/rock.obj");
-    Model planet("3D_Models/planet/planet.obj");
+    Model planet("3D_Models/backpack/backpack.obj");
 
     // generate a large list of semi-random model transformation matrices
     // ------------------------------------------------------------------
-    unsigned int amount = 100000;
+    unsigned int amount = 1000;
     glm::mat4* modelMatrices;
     modelMatrices = new glm::mat4[amount];
     srand(static_cast<unsigned int>(glfwGetTime())); // initialize random seed
