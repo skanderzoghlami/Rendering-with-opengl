@@ -131,7 +131,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : "2"
+			"value" : "6"
 		},
 		{
 			"name" : "CMAKE_COLOR_MAKEFILE",
