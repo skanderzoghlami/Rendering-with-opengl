@@ -1,0 +1,6 @@
+Geometry shader is more fun than I expected !
+Turns out you can animate stuff using the geometry shader ! the thing that I like more than graphics is animations !!
+Let's explain the idea first:
+Usually we have the vertex shader, it takes x,y,z,u,v... and a set of uniforms and outputs the position of each vertex after multiplying it by mvp.
+Fragment Shader takes the fragmented triangles (pixels) and assign a color to each of them.
+Now how did we go from positions to triangles? this is what acutally happens in geometry shaders, it takes primitives(points/triangles/lines or whatver) and outputs another type of primitives, the assignment part is still hidden at this stage, but think of it like that, it takes the assembled primitives which is done somewhere else and do more operations on them to output different primitives, with this you can add fur to an object, make it move, explode and many cool tricks ! you can even delete/add stuff to an object.
