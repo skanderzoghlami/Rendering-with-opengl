@@ -1,7 +1,7 @@
 #version 330 core
 layout (triangles) in;
 layout (triangle_strip, max_vertices = 3) out;
-
+// Table here because the input contains 3 vertices so we'll have 3 tex coords
 in VS_OUT {
     vec2 texCoords;
 } gs_in[];
