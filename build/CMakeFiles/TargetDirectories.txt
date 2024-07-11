@@ -26,6 +26,7 @@ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFi
 C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFiles/ContinuousCoverage.dir
 C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFiles/ContinuousMemCheck.dir
 C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFiles/ContinuousSubmit.dir
+C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFiles/ImGui.dir
 C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFiles/rendering_quickstart.dir
 C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFiles/package.dir
 C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build/CMakeFiles/package_source.dir

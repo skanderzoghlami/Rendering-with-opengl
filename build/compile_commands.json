@@ -1,13 +1,55 @@
 [
 {
   "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL  -g -o CMakeFiles\\rendering_quickstart.dir\\main.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\main.cpp\"",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/ImGui.dir/includes_CXX.rsp -g -o CMakeFiles\\ImGui.dir\\external\\imgui\\backends\\imgui_impl_glfw.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\external\\imgui\\backends\\imgui_impl_glfw.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/backends/imgui_impl_glfw.cpp",
+  "output": "CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_glfw.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/ImGui.dir/includes_CXX.rsp -g -o CMakeFiles\\ImGui.dir\\external\\imgui\\backends\\imgui_impl_opengl3.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\external\\imgui\\backends\\imgui_impl_opengl3.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/backends/imgui_impl_opengl3.cpp",
+  "output": "CMakeFiles/ImGui.dir/external/imgui/backends/imgui_impl_opengl3.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/ImGui.dir/includes_CXX.rsp -g -o CMakeFiles\\ImGui.dir\\external\\imgui\\imgui.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\external\\imgui\\imgui.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/imgui.cpp",
+  "output": "CMakeFiles/ImGui.dir/external/imgui/imgui.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/ImGui.dir/includes_CXX.rsp -g -o CMakeFiles\\ImGui.dir\\external\\imgui\\imgui_demo.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\external\\imgui\\imgui_demo.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/imgui_demo.cpp",
+  "output": "CMakeFiles/ImGui.dir/external/imgui/imgui_demo.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/ImGui.dir/includes_CXX.rsp -g -o CMakeFiles\\ImGui.dir\\external\\imgui\\imgui_draw.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\external\\imgui\\imgui_draw.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/imgui_draw.cpp",
+  "output": "CMakeFiles/ImGui.dir/external/imgui/imgui_draw.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/ImGui.dir/includes_CXX.rsp -g -o CMakeFiles\\ImGui.dir\\external\\imgui\\imgui_tables.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\external\\imgui\\imgui_tables.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/imgui_tables.cpp",
+  "output": "CMakeFiles/ImGui.dir/external/imgui/imgui_tables.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/ImGui.dir/includes_CXX.rsp -g -o CMakeFiles\\ImGui.dir\\external\\imgui\\imgui_widgets.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\external\\imgui\\imgui_widgets.cpp\"",
+  "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/imgui_widgets.cpp",
+  "output": "CMakeFiles/ImGui.dir/external/imgui/imgui_widgets.cpp.obj"
+},
+{
+  "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe -DGLFW_DLL @CMakeFiles/rendering_quickstart.dir/includes_CXX.rsp -g -o CMakeFiles\\rendering_quickstart.dir\\main.cpp.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\main.cpp\"",
   "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/main.cpp",
   "output": "CMakeFiles/rendering_quickstart.dir/main.cpp.obj"
 },
 {
   "directory": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/build",
-  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DGLFW_DLL  -g -o CMakeFiles\\rendering_quickstart.dir\\glad.c.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\glad.c\"",
+  "command": "C:\\msys64\\mingw64\\bin\\gcc.exe -DGLFW_DLL @CMakeFiles/rendering_quickstart.dir/includes_C.rsp -g -o CMakeFiles\\rendering_quickstart.dir\\glad.c.obj -c \"C:\\Users\\skander\\OneDrive\\Bureau\\OpenGL with python\\real_rendering\\glad.c\"",
   "file": "C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/glad.c",
   "output": "CMakeFiles/rendering_quickstart.dir/glad.c.obj"
 }

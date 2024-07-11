@@ -274,6 +274,10 @@ CMakeFiles/rendering_quickstart.dir/glad.c.obj: C:/Users/skander/OneDrive/Bureau
   C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xtestintrin.h
 
 CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/main.cpp \
+  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/backends/imgui_impl_glfw.h \
+  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/backends/imgui_impl_opengl3.h \
+  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/imconfig.h \
+  C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/imgui.h \
   C:/msys64/mingw64/include/GLFW/glfw3.h \
   C:/msys64/mingw64/include/KHR/khrplatform.h \
   C:/msys64/mingw64/include/_mingw.h \
@@ -858,6 +862,10 @@ C:/msys64/mingw64/include/glm/ext/matrix_transform.inl:
 
 C:/msys64/mingw64/include/glm/ext/matrix_transform.hpp:
 
+C:/msys64/mingw64/include/glm/ext/matrix_float4x4_precision.hpp:
+
+C:/msys64/mingw64/include/glm/ext/matrix_float4x4.hpp:
+
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/smmintrin.h:
@@ -1160,8 +1168,6 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/prfchwintrin.h:
 
 C:/msys64/mingw64/include/glm/ext/matrix_double3x4.hpp:
 
-C:/msys64/mingw64/include/c++/13.2.0/cwctype:
-
 C:/msys64/mingw64/include/glm/common.hpp:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512fp16vlintrin.h:
@@ -1234,11 +1240,19 @@ C:/msys64/mingw64/include/vadefs.h:
 
 C:/msys64/mingw64/include/corecrt_wstdlib.h:
 
+C:/msys64/mingw64/include/glm/ext/matrix_float4x3_precision.hpp:
+
+C:/msys64/mingw64/include/shellapi.h:
+
 C:/msys64/mingw64/include/_timeval.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/avx512erintrin.h:
 
 C:/msys64/mingw64/include/glm/detail/func_integer.inl:
+
+C:/msys64/mingw64/include/glm/ext/matrix_projection.hpp:
+
+C:/msys64/mingw64/include/joystickapi.h:
 
 C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/movdirintrin.h:
 
@@ -1316,6 +1330,8 @@ C:/msys64/mingw64/include/assimp/texture.h:
 
 C:/msys64/mingw64/include/interlockedapi.h:
 
+C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/imgui.h:
+
 C:/msys64/mingw64/include/dlgs.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/bits/fstream.tcc:
@@ -1343,8 +1359,6 @@ C:/msys64/mingw64/include/pshpack1.h:
 C:/msys64/mingw64/include/processthreadsapi.h:
 
 C:/msys64/mingw64/include/mmsyscom.h:
-
-C:/msys64/mingw64/include/glm/ext/matrix_float4x4_precision.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_double4x3.hpp:
 
@@ -1429,10 +1443,6 @@ C:/msys64/mingw64/include/rpcnsi.h:
 C:/msys64/mingw64/include/glad/glad.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/streambuf:
-
-C:/msys64/mingw64/include/joystickapi.h:
-
-C:/msys64/mingw64/include/glm/ext/matrix_projection.hpp:
 
 C:/msys64/mingw64/include/rpcnsip.h:
 
@@ -1580,6 +1590,14 @@ C:/msys64/mingw64/include/c++/13.2.0/bits/alloc_traits.h:
 
 C:/msys64/mingw64/include/glm/detail/type_mat4x4.hpp:
 
+C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/backends/imgui_impl_glfw.h:
+
+C:/msys64/mingw64/include/glm/ext/matrix_float3x4_precision.hpp:
+
+C:/msys64/mingw64/include/c++/13.2.0/cwctype:
+
+C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/imconfig.h:
+
 C:/msys64/mingw64/include/GLFW/glfw3.h:
 
 C:/msys64/mingw64/include/assimp/vector2.h:
@@ -1598,11 +1616,11 @@ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/shaintrin.h:
 
 C:/msys64/mingw64/include/c++/13.2.0/clocale:
 
-C:/msys64/mingw64/include/glm/ext/matrix_float4x4.hpp:
-
 C:/msys64/mingw64/include/c++/13.2.0/istream:
 
 C:/msys64/mingw64/include/assimp/Importer.hpp:
+
+C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/external/imgui/backends/imgui_impl_opengl3.h:
 
 C:/msys64/mingw64/include/assimp/MathFunctions.h:
 
@@ -1637,10 +1655,6 @@ C:/msys64/mingw64/include/c++/13.2.0/stdlib.h:
 C:/msys64/mingw64/include/c++/13.2.0/bits/specfun.h:
 
 C:/msys64/mingw64/include/assimp/config.h:
-
-C:/msys64/mingw64/include/shellapi.h:
-
-C:/msys64/mingw64/include/glm/ext/matrix_float4x3_precision.hpp:
 
 C:/msys64/mingw64/include/corecrt_startup.h:
 
@@ -2011,7 +2025,5 @@ C:/msys64/mingw64/include/wingdi.h:
 C:/msys64/mingw64/include/glm/ext/matrix_float3x3_precision.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_float3x4.hpp:
-
-C:/msys64/mingw64/include/glm/ext/matrix_float3x4_precision.hpp:
 
 C:/msys64/mingw64/include/glm/ext/matrix_float4x2.hpp:

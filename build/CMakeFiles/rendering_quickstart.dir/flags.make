@@ -5,13 +5,13 @@
 # compile CXX with C:/msys64/mingw64/bin/g++.exe
 C_DEFINES = -DGLFW_DLL
 
-C_INCLUDES = 
+C_INCLUDES = @CMakeFiles/rendering_quickstart.dir/includes_C.rsp
 
 C_FLAGS = -g
 
 CXX_DEFINES = -DGLFW_DLL
 
-CXX_INCLUDES = 
+CXX_INCLUDES = @CMakeFiles/rendering_quickstart.dir/includes_CXX.rsp
 
 CXX_FLAGS = -g
 

@@ -43,6 +43,7 @@ set(CMAKE_MAKEFILE_DEPENDS
   "C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU-CXX.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/Compiler/GNU.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/DartConfiguration.tcl.in"
+  "C:/msys64/mingw64/share/cmake/Modules/FindOpenGL.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/FindPackageHandleStandardArgs.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/FindPackageMessage.cmake"
   "C:/msys64/mingw64/share/cmake/Modules/FindThreads.cmake"
@@ -103,5 +104,6 @@ set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ContinuousCoverage.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousMemCheck.dir/DependInfo.cmake"
   "CMakeFiles/ContinuousSubmit.dir/DependInfo.cmake"
+  "CMakeFiles/ImGui.dir/DependInfo.cmake"
   "CMakeFiles/rendering_quickstart.dir/DependInfo.cmake"
   )

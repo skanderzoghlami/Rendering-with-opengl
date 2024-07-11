@@ -276,6 +276,10 @@ CMakeFiles/rendering_quickstart.dir/glad.c.obj
 
 CMakeFiles/rendering_quickstart.dir/main.cpp.obj
  C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/main.cpp
+ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/backends/imgui_impl_glfw.h
+ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/backends/imgui_impl_opengl3.h
+ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/imconfig.h
+ C:/Users/skander/OneDrive/Bureau/OpenGL with python/real_rendering/external/imgui/imgui.h
  C:/msys64/mingw64/include/GLFW/glfw3.h
  C:/msys64/mingw64/include/KHR/khrplatform.h
  C:/msys64/mingw64/include/_mingw.h

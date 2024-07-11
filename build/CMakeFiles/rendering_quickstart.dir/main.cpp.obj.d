@@ -421,4 +421,8 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.obj: \
  C:/msys64/mingw64/include/c++/13.2.0/math.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/emmintrin.h \
  C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/xmmintrin.h \
- C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mmintrin.h
+ C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/mmintrin.h \
+ C:/Users/skander/OneDrive/Bureau/OPENGL~1/REAL_R~1/external/imgui/imgui.h \
+ C:/Users/skander/OneDrive/Bureau/OPENGL~1/REAL_R~1/external/imgui/imconfig.h \
+ C:/Users/skander/OneDrive/Bureau/OPENGL~1/REAL_R~1/external/imgui/backends/imgui_impl_glfw.h \
+ C:/Users/skander/OneDrive/Bureau/OPENGL~1/REAL_R~1/external/imgui/backends/imgui_impl_opengl3.h

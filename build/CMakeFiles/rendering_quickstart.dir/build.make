@@ -69,6 +69,7 @@ include CMakeFiles/rendering_quickstart.dir/progress.make
 include CMakeFiles/rendering_quickstart.dir/flags.make
 
 CMakeFiles/rendering_quickstart.dir/main.cpp.obj: CMakeFiles/rendering_quickstart.dir/flags.make
+CMakeFiles/rendering_quickstart.dir/main.cpp.obj: CMakeFiles/rendering_quickstart.dir/includes_CXX.rsp
 CMakeFiles/rendering_quickstart.dir/main.cpp.obj: C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/main.cpp
 CMakeFiles/rendering_quickstart.dir/main.cpp.obj: CMakeFiles/rendering_quickstart.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\skander\OneDrive\Bureau\OpenGL with python\real_rendering\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/rendering_quickstart.dir/main.cpp.obj"
@@ -83,6 +84,7 @@ CMakeFiles/rendering_quickstart.dir/main.cpp.s: cmake_force
 	C:\msys64\mingw64\bin\g++.exe $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "C:\Users\skander\OneDrive\Bureau\OpenGL with python\real_rendering\main.cpp" -o CMakeFiles\rendering_quickstart.dir\main.cpp.s
 
 CMakeFiles/rendering_quickstart.dir/glad.c.obj: CMakeFiles/rendering_quickstart.dir/flags.make
+CMakeFiles/rendering_quickstart.dir/glad.c.obj: CMakeFiles/rendering_quickstart.dir/includes_C.rsp
 CMakeFiles/rendering_quickstart.dir/glad.c.obj: C:/Users/skander/OneDrive/Bureau/OpenGL\ with\ python/real_rendering/glad.c
 CMakeFiles/rendering_quickstart.dir/glad.c.obj: CMakeFiles/rendering_quickstart.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir="C:\Users\skander\OneDrive\Bureau\OpenGL with python\real_rendering\build\CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/rendering_quickstart.dir/glad.c.obj"
