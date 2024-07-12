@@ -16,7 +16,7 @@ target_link_libraries(ImGui PUBLIC glfw OpenGL::GL)
 
 add_executable(rendering_quickstart main.cpp glad.c)
 
-target_link_libraries(rendering_quickstart glfw ${ASSIMP_LIBRARIES})
+target_link_libraries(rendering_quickstart glfw ${ASSIMP_LIBRARIES} ImGui OpenGL::GL)
 
 set(CPACK_PROJECT_NAME ${PROJECT_NAME})
 set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})

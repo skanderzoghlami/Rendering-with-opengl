@@ -861,7 +861,7 @@ CMakeFiles/ImGui.dir/clean:
 # Target rules for target CMakeFiles/rendering_quickstart.dir
 
 # All Build rule for target.
-CMakeFiles/rendering_quickstart.dir/all:
+CMakeFiles/rendering_quickstart.dir/all: CMakeFiles/ImGui.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rendering_quickstart.dir\build.make CMakeFiles/rendering_quickstart.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\rendering_quickstart.dir\build.make CMakeFiles/rendering_quickstart.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir="C:\Users\skander\OneDrive\Bureau\OpenGL with python\real_rendering\build\CMakeFiles" --progress-num=9,10,11 "Built target rendering_quickstart"
@@ -869,7 +869,7 @@ CMakeFiles/rendering_quickstart.dir/all:
 
 # Build rule for subdir invocation for target.
 CMakeFiles/rendering_quickstart.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\skander\OneDrive\Bureau\OpenGL with python\real_rendering\build\CMakeFiles" 3
+	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\skander\OneDrive\Bureau\OpenGL with python\real_rendering\build\CMakeFiles" 11
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/rendering_quickstart.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start "C:\Users\skander\OneDrive\Bureau\OpenGL with python\real_rendering\build\CMakeFiles" 0
 .PHONY : CMakeFiles/rendering_quickstart.dir/rule
