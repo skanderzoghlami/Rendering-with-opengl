@@ -23,4 +23,5 @@ After that the rest should be easy for anyone familiar with cmake:
 # Iteration 0:
 Iteration 0 is basically the installation and seeing if everything is working fine.
 This should be the output:
-![Iteration 0](../Images/it0.png)
+
+![Capture d’écran du 2025-05-05 16-22-36](https://github.com/user-attachments/assets/0f5c4650-0d57-4674-8be5-6c168885837b)
