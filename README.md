@@ -23,4 +23,4 @@ After that the rest should be easy for anyone familiar with cmake:
 # Iteration 0:
 Iteration 0 is basically the installation and seeing if everything is working fine.
 This should be the output:
-![Iteration 0](../images/it0.png)
+![Iteration 0](../Images/it0.png)
