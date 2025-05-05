@@ -1,23 +1,42 @@
-cmake_minimum_required(VERSION 3.5.0)
-project(rendering_quickstart VERSION 0.1.0 LANGUAGES C CXX)
+cmake_minimum_required(VERSION 3.10)
+project(OGLRender)
 
-include(CTest)
-enable_testing()
-find_package(glfw3 REQUIRED)
-find_package(Assimp REQUIRED)
-find_package(OpenGL REQUIRED)
 
-set(IMGUI_DIR ${CMAKE_SOURCE_DIR}/external/imgui)
-include_directories(${IMGUI_DIR} ${IMGUI_DIR}/backends)
-file(GLOB IMGUI_SOURCES ${IMGUI_DIR}/*.cpp ${IMGUI_DIR}/backends/imgui_impl_glfw.cpp ${IMGUI_DIR}/backends/imgui_impl_opengl3.cpp)
-add_library(ImGui STATIC ${IMGUI_SOURCES})
-target_include_directories(ImGui PUBLIC ${IMGUI_DIR})
-target_link_libraries(ImGui PUBLIC glfw OpenGL::GL)
+include(FetchContent)
 
-add_executable(rendering_quickstart main.cpp glad.c)
+# GLFW
+FetchContent_Declare(
+  glfw
+  GIT_REPOSITORY https://github.com/glfw/glfw.git
+  GIT_TAG latest
+)
+set(GLFW_BUILD_WAYLAND OFF)
+FetchContent_MakeAvailable(glfw)
 
-target_link_libraries(rendering_quickstart glfw ${ASSIMP_LIBRARIES} ImGui OpenGL::GL)
 
-set(CPACK_PROJECT_NAME ${PROJECT_NAME})
-set(CPACK_PROJECT_VERSION ${PROJECT_VERSION})
-include(CPack)
+# GLAD
+FetchContent_Declare(
+  glad
+  GIT_REPOSITORY https://github.com/Dav1dde/glad.git
+  GIT_TAG v0.1.36
+)
+FetchContent_MakeAvailable(glad)
+
+
+
+set(CMAKE_CXX_STANDARD 17)
+
+include_directories(include)
+
+add_executable(OGLRender src/main.cpp)
+
+target_link_libraries(OGLRender
+  PRIVATE
+    glfw
+    glad
+)
+
+target_include_directories(OGLRender
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+)
