@@ -21,7 +21,19 @@ cmake ..
 make   
 ./OGLRender </pre>
 
-# Iteration 1:
+# Iteration 2: More Triangles
+Now Instead of drawing just 1 triangle and to avoid duplicating vertices and filling memory with them, we use indexing.
+- Define a set of vertices like before
+- Create Triangles using the indices of the vertices (Second array called indices)
+- To make OpenGl learn about the newly created indices, we use an EBO, generate it, bind it, fill it.
+( 1 important note here, when unbinding the order is VBO -> VAO -> EBO)
+
+![image](https://github.com/user-attachments/assets/ddfc3361-28fc-4a59-b8d0-96e73550a204)
+
+
+
+
+# Iteration 1: First Triangle
 In This iteration we make the code slightly more interesting:
 - we create 3 vertices, (the origin is the center of the window x points to the left y points up and it's normalized [-1,1] )
 - We Make a simple vertex Shader and fragment Shader, compile them and attach them to the program (all of these are opengl objects defined by references)
@@ -31,7 +43,7 @@ In This iteration we make the code slightly more interesting:
 
 ![image](https://github.com/user-attachments/assets/c4ec7b96-622b-4a18-9be8-c0e8529c51c3)
 
-# Iteration 0:
+# Iteration 0: Basic Window
 Iteration 0 is basically the installation and seeing if everything is working fine.
 This should be the output:
 
