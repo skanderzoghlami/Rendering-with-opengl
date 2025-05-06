@@ -14,11 +14,12 @@ And for GLAD and GLFW, everything should be taken care of thanks to CMake, I use
 
 After that the rest should be easy for anyone familiar with cmake:
 
-<pre> mkdir build  </pre>
-<pre> cd build  </pre>
-<pre> cmake ..  </pre>
-<pre> make   </pre>
-<pre> ./OGLRender </pre>
+<pre> $ bash
+mkdir build  
+cd build 
+cmake .. 
+make   
+./OGLRender </pre>
 
 # Iteration 0:
 Iteration 0 is basically the installation and seeing if everything is working fine.
