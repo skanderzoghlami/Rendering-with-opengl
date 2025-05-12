@@ -1,7 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 project(OGLRender)
 
-
 include(FetchContent)
 
 # GLFW
@@ -13,7 +12,6 @@ FetchContent_Declare(
 set(GLFW_BUILD_WAYLAND OFF)
 FetchContent_MakeAvailable(glfw)
 
-
 # GLAD
 FetchContent_Declare(
   glad
@@ -22,21 +20,31 @@ FetchContent_Declare(
 )
 FetchContent_MakeAvailable(glad)
 
+# Collect source files
+file(GLOB SOURCES
+  "src/*.cpp"
+  "main.cpp"
+)
 
+# Create executable
+add_executable(OGLRender ${SOURCES})
 
-set(CMAKE_CXX_STANDARD 17)
+# Add include paths
+target_include_directories(OGLRender
+  PRIVATE
+    ${CMAKE_CURRENT_SOURCE_DIR}/include
+    ${CMAKE_CURRENT_SOURCE_DIR}/src
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/lib
+)
 
-include_directories(include)
-
-add_executable(OGLRender src/main.cpp)
-
+# Link GLFW and GLAD
 target_link_libraries(OGLRender
   PRIVATE
     glfw
     glad
 )
-
-target_include_directories(OGLRender
-  PRIVATE
-    ${CMAKE_CURRENT_SOURCE_DIR}/src
+add_custom_command(TARGET OGLRender POST_BUILD
+  COMMAND ${CMAKE_COMMAND} -E copy_directory
+  ${CMAKE_SOURCE_DIR}/resources $<TARGET_FILE_DIR:OGLRender>/resources
 )
+
