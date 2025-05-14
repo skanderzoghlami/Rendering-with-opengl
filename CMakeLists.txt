@@ -35,6 +35,7 @@ target_include_directories(OGLRender
     ${CMAKE_CURRENT_SOURCE_DIR}/include
     ${CMAKE_CURRENT_SOURCE_DIR}/src
     ${CMAKE_CURRENT_SOURCE_DIR}/include/lib
+    ${CMAKE_CURRENT_SOURCE_DIR}/include/stb
 )
 
 # Link GLFW and GLAD
