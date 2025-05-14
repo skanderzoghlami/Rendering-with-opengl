@@ -21,6 +21,25 @@ cmake ..
 make   
 ./OGLRender </pre>
 
+
+# Iteration 3: Shaders
+Shaders at this iteration takes two types of inputs:
+- First one is layout, those must be set up after the binding of the VBO, they're used for data that comes with the vertices: colors/normals/texture coordinates... for the layout we need to specify the stride and offset for each attribute we're using, layout always enter by the vertex shader and must be passed from it to the next one.
+- Second one is uniforms, they're shader specific and we can only give them after activating the shader that holds them.
+
+by passing colors layout and a scaling factor uniform to our triangles we get the following image:
+
+![image](https://github.com/user-attachments/assets/6589a627-b08f-433a-96c8-b4b3cfc02b20)
+
+
+
+
+
+
+
+
+
+
 # Iteration 2: More Triangles
 Now Instead of drawing just 1 triangle and to avoid duplicating vertices and filling memory with them, we use indexing.
 - Define a set of vertices like before
