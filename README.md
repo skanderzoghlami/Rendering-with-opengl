@@ -21,6 +21,15 @@ cmake ..
 make   
 ./OGLRender </pre>
 
+# Iteration 4: Textures
+In this iteration, we first changed the vertices to add two more fields for each one of them which are the texture coordinates.
+We add a lirabry that reads images and transforms them into a format acceptable by opengl. (stbi)
+We create a texture class that can create texture type parametrize it and link an image into it.
+We modified our VAO to make it capable of reading the modified vertices data.
+
+![image](https://github.com/user-attachments/assets/4e9b79ca-9586-4b71-82e1-7f8cc3c595ae)
+
+
 
 # Iteration 3: Shaders
 Shaders at this iteration takes two types of inputs:
