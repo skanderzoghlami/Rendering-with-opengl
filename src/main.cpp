@@ -17,7 +17,7 @@ namespace fs = std::filesystem;
 #include"VAO.h"
 #include"VBO.h"
 #include"EBO.h"
-
+#include"camera.h"
 
 
 
@@ -101,12 +101,6 @@ int main()
 	VBO1.Unbind();
 	EBO1.Unbind();
 
-	// Gets ID of uniform called "scale"
-	GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
-	GLuint modelID = glGetUniformLocation(shaderProgram.ID, "model");
-	GLuint viewID = glGetUniformLocation(shaderProgram.ID, "view");
-	GLuint projectionID = glGetUniformLocation(shaderProgram.ID, "projection");
-
 	/*
 	* I'm doing this relative path thing in order to centralize all the resources into one folder and not
 	* duplicate them between tutorial folders. You can just copy paste the resources from the 'Resources'
@@ -126,6 +120,7 @@ int main()
 	float rotation = 0.0f;
 	// Main while loop
 	glEnable(GL_DEPTH_TEST);
+	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 
 	while (!glfwWindowShouldClose(window))
 	{
@@ -141,22 +136,9 @@ int main()
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		// Tell OpenGL which Shader Program we want to use
 		shaderProgram.Activate();
-		// Assigns a value to the uniform; NOTE: Must always be done after activating the Shader Program
-		glUniform1f(uniID, 0.5f);
 		// Going 3D with MVP
-		glm::mat4 model = glm::mat4(1.0f);
-		glm::mat4 view = glm::mat4(1.0f);
-		glm::mat4 projection = glm::mat4(1.0f);
-		
-		model = glm::rotate(model, glm::radians(rotation), glm::vec3(0.0f, 1.0f, 0.0f));
-		view = glm::translate(view, glm::vec3(0.0f, -0.5f , -2.0f));
-		projection = glm::perspective(glm::radians(45.0f), (float)800 / (float)800, 0.1f, 100.0f);
-
-
-		glUniformMatrix4fv(modelID, 1, GL_FALSE, glm::value_ptr(model));
-		glUniformMatrix4fv(viewID, 1, GL_FALSE, glm::value_ptr(view));
-		glUniformMatrix4fv(projectionID, 1, GL_FALSE, glm::value_ptr(projection));
-
+		camera.Inputs(window,deltaTime);
+		camera.Matrix(45.0f, 0.1f, 100.0f, shaderProgram, "camMatrix");
 
 
 		// Binds texture so that is appears in rendering

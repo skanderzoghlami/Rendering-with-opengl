@@ -6,11 +6,11 @@ layout (location = 2) in vec2 aTexture;
 out vec3 color ;
 out vec2 textCoord ;
 
-uniform mat4 model , view , projection;
+uniform mat4 camMatrix;
 
 uniform float scale;
 void main() {
-    gl_Position =  projection * view * model * vec4(aPos,  1.0f);
+    gl_Position =  camMatrix * vec4(aPos,  1.0f);
     color = aColor;
     textCoord = aTexture;
 }
