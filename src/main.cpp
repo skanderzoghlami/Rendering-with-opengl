@@ -8,6 +8,10 @@ namespace fs = std::filesystem;
 #include<GLFW/glfw3.h>
 #include<stb/stb_image.h>
 
+#include<glm/glm.hpp>
+#include<glm/gtc/matrix_transform.hpp>
+#include<glm/gtc/type_ptr.hpp>
+
 #include"texture.h"
 #include"shaderClass.h"
 #include"VAO.h"
@@ -16,22 +20,29 @@ namespace fs = std::filesystem;
 
 
 
+
+const unsigned int width  = 800 , height = 800 ; 
+
 // Vertices coordinates
 GLfloat vertices[] =
 { //     COORDINATES     /        COLORS      /   TexCoord  //
-	-0.5f, -0.5f, 0.0f,     1.0f, 0.0f, 0.0f,	0.0f, 0.0f, // Lower left corner
-	-0.5f,  0.5f, 0.0f,     0.0f, 1.0f, 0.0f,	0.0f, 1.0f, // Upper left corner
-	 0.5f,  0.5f, 0.0f,     0.0f, 0.0f, 1.0f,	1.0f, 1.0f, // Upper right corner
-	 0.5f, -0.5f, 0.0f,     1.0f, 1.0f, 1.0f,	1.0f, 0.0f  // Lower right corner
+	-0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	0.0f, 0.0f,
+	-0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	5.0f, 0.0f,
+	 0.5f, 0.0f, -0.5f,     0.83f, 0.70f, 0.44f,	0.0f, 0.0f,
+	 0.5f, 0.0f,  0.5f,     0.83f, 0.70f, 0.44f,	5.0f, 0.0f,
+	 0.0f, 0.8f,  0.0f,     0.92f, 0.86f, 0.76f,	2.5f, 5.0f
 };
 
 // Indices for vertices order
 GLuint indices[] =
 {
-	0, 2, 1, // Upper triangle
-	0, 3, 2 // Lower triangle
+	0, 1, 2,
+	0, 2, 3,
+	0, 1, 4,
+	1, 2, 4,
+	2, 3, 4,
+	3, 0, 4
 };
-
 
 
 int main()
@@ -48,7 +59,7 @@ int main()
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
 
 	// Create a GLFWwindow object of 800 by 800 pixels, naming it "YoutubeOpenGL"
-	GLFWwindow* window = glfwCreateWindow(800, 800, "YoutubeOpenGL", NULL, NULL);
+	GLFWwindow* window = glfwCreateWindow(width, height, "Pyramid Render", NULL, NULL);
 	// Error check if the window fails to create
 	if (window == NULL)
 	{
@@ -63,7 +74,7 @@ int main()
 	gladLoadGL();
 	// Specify the viewport of OpenGL in the Window
 	// In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
-	glViewport(0, 0, 800, 800);
+	glViewport(0, 0, width, height);
 
 
 
@@ -92,8 +103,9 @@ int main()
 
 	// Gets ID of uniform called "scale"
 	GLuint uniID = glGetUniformLocation(shaderProgram.ID, "scale");
-
-
+	GLuint modelID = glGetUniformLocation(shaderProgram.ID, "model");
+	GLuint viewID = glGetUniformLocation(shaderProgram.ID, "view");
+	GLuint projectionID = glGetUniformLocation(shaderProgram.ID, "projection");
 
 	/*
 	* I'm doing this relative path thing in order to centralize all the resources into one folder and not
@@ -105,32 +117,54 @@ int main()
 	std::string texPath = "/resources/images/";
 
 	// Texture
-	Texture popCat((parentDir + texPath + "pop_cat.png").c_str(), GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
+	Texture popCat((parentDir + texPath + "brick.png").c_str(), GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
 	popCat.texUnit(shaderProgram, "tex0", 0);
 
-	// Original code from the tutorial
-	/*Texture popCat("pop_cat.png", GL_TEXTURE_2D, GL_TEXTURE0, GL_RGBA, GL_UNSIGNED_BYTE);
-	popCat.texUnit(shaderProgram, "tex0", 0);*/
 
-
-
+	double prevTime = glfwGetTime();
+	
+	float rotation = 0.0f;
 	// Main while loop
+	glEnable(GL_DEPTH_TEST);
+
 	while (!glfwWindowShouldClose(window))
 	{
+
+		double crntTime = glfwGetTime();
+		float deltaTime = static_cast<float>(crntTime - prevTime);
+		prevTime = crntTime;
+
+		rotation += 50.0f * deltaTime; // Rotate 50 degrees per second
 		// Specify the color of the background
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 		// Clean the back buffer and assign the new color to it
-		glClear(GL_COLOR_BUFFER_BIT);
+		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		// Tell OpenGL which Shader Program we want to use
 		shaderProgram.Activate();
 		// Assigns a value to the uniform; NOTE: Must always be done after activating the Shader Program
 		glUniform1f(uniID, 0.5f);
+		// Going 3D with MVP
+		glm::mat4 model = glm::mat4(1.0f);
+		glm::mat4 view = glm::mat4(1.0f);
+		glm::mat4 projection = glm::mat4(1.0f);
+		
+		model = glm::rotate(model, glm::radians(rotation), glm::vec3(0.0f, 1.0f, 0.0f));
+		view = glm::translate(view, glm::vec3(0.0f, -0.5f , -2.0f));
+		projection = glm::perspective(glm::radians(45.0f), (float)800 / (float)800, 0.1f, 100.0f);
+
+
+		glUniformMatrix4fv(modelID, 1, GL_FALSE, glm::value_ptr(model));
+		glUniformMatrix4fv(viewID, 1, GL_FALSE, glm::value_ptr(view));
+		glUniformMatrix4fv(projectionID, 1, GL_FALSE, glm::value_ptr(projection));
+
+
+
 		// Binds texture so that is appears in rendering
 		popCat.Bind();
 		// Bind the VAO so OpenGL knows to use it
 		VAO1.Bind();
 		// Draw primitives, number of indices, datatype of indices, index of indices
-		glDrawElements(GL_TRIANGLES, 6, GL_UNSIGNED_INT, 0);
+		glDrawElements(GL_TRIANGLES, sizeof(indices) / sizeof(int), GL_UNSIGNED_INT, 0);
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
 		// Take care of all GLFW events
