@@ -40,10 +40,6 @@ make
 - Added the Depth testing to tell opengl which vertices to consider.
 
 
-![Screen-Recording-2025-05-16-110444](https://github.com/user-attachments/assets/e72c986c-3a20-44d6-beb9-59c691e0401b)
-
-
-
 # Iteration 4: Textures
 In this iteration, we :
 - changed the vertices to add two more fields for each one of them which are the texture coordinates.
