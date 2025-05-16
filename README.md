@@ -20,6 +20,16 @@ cd build
 cmake .. 
 make   
 ./OGLRender </pre>
+# Iteration 6: Camera Control
+- Add the camera class
+- Possibility to control the camera orientation and position using inputs.
+
+![Screen-Recording-2025-05-16-110444](https://github.com/user-attachments/assets/cc413034-90c9-4e8a-a46a-19ff54721f30)
+
+
+
+
+
 
 # Iteration 5: Going 3D 
 - Changed the vertices and indices to now render a pyramid , made the draw function dependent on the number indices and not hard coded.
