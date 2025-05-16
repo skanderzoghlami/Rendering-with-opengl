@@ -21,11 +21,25 @@ cmake ..
 make   
 ./OGLRender </pre>
 
+# Iteration 5: Going 3D 
+- Changed the vertices and indices to now render a pyramid , made the draw function dependent on the number indices and not hard coded.
+- Added the GLM library for matrix manipulation.
+- Defined the Model matrix ( just a rotation around Y axis dependent from time)
+- Defined the View matrix (a translation of the world by a hard coded 3D vector)
+- Defined the Projection matrix (Persepctive projection with a fixed rotation given in radians)
+- Added the Depth testing to tell opengl which vertices to consider.
+
+
+![Screen-Recording-2025-05-16-110444](https://github.com/user-attachments/assets/e72c986c-3a20-44d6-beb9-59c691e0401b)
+
+
+
 # Iteration 4: Textures
-In this iteration, we first changed the vertices to add two more fields for each one of them which are the texture coordinates.
-We add a lirabry that reads images and transforms them into a format acceptable by opengl. (stbi)
-We create a texture class that can create texture type parametrize it and link an image into it.
-We modified our VAO to make it capable of reading the modified vertices data.
+In this iteration, we :
+- changed the vertices to add two more fields for each one of them which are the texture coordinates.
+- We add a lirabry that reads images and transforms them into a format acceptable by opengl. (stbi)
+- We create a texture class that can create texture type parametrize it and link an image into it.
+- We modified our VAO to make it capable of reading the modified vertices data.
 
 ![image](https://github.com/user-attachments/assets/4e9b79ca-9586-4b71-82e1-7f8cc3c595ae)
 
