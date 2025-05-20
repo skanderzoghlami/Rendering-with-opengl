@@ -20,6 +20,18 @@ cd build
 cmake .. 
 make   
 ./OGLRender </pre>
+
+
+
+# Iteration 6: Phong Lighting
+- Changed the Camera class to support updates to the camera matrix.
+- Added Phong Lighting where: Ambient is hard coded, Diffuse is calculated using the dot product between the lightdirection and the normal, and specular is calculated using the dot product between the reflected ray (light direction wrt to normal) and the viewdirection from the camera. 
+
+![image](https://github.com/user-attachments/assets/7f66e9ce-692e-4701-872b-e2d1ff50c4e2)
+
+
+
+
 # Iteration 6: Camera Control
 - Add the camera class
 - Possibility to control the camera orientation and position using inputs.
