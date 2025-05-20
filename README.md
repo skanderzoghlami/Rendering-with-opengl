@@ -20,6 +20,16 @@ cd build
 cmake .. 
 make   
 ./OGLRender </pre>
+# Iteration 6: Camera Control
+- Add the camera class
+- Possibility to control the camera orientation and position using inputs.
+
+![Screen-Recording-2025-05-16-110444](https://github.com/user-attachments/assets/cc413034-90c9-4e8a-a46a-19ff54721f30)
+
+
+
+
+
 
 # Iteration 5: Going 3D 
 - Changed the vertices and indices to now render a pyramid , made the draw function dependent on the number indices and not hard coded.
@@ -28,10 +38,6 @@ make
 - Defined the View matrix (a translation of the world by a hard coded 3D vector)
 - Defined the Projection matrix (Persepctive projection with a fixed rotation given in radians)
 - Added the Depth testing to tell opengl which vertices to consider.
-
-
-![Screen-Recording-2025-05-16-110444](https://github.com/user-attachments/assets/e72c986c-3a20-44d6-beb9-59c691e0401b)
-
 
 
 # Iteration 4: Textures
