@@ -138,7 +138,9 @@ int main()
 		shaderProgram.Activate();
 		// Going 3D with MVP
 		camera.Inputs(window,deltaTime);
-		camera.Matrix(45.0f, 0.1f, 100.0f, shaderProgram, "camMatrix");
+		camera.updateMatrix(45.0f, 0.1f, 100.0f);
+
+		camera.Matrix(shaderProgram, "camMatrix");
 
 
 		// Binds texture so that is appears in rendering
