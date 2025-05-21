@@ -23,6 +23,13 @@ make
 
 
 
+# Iteration 7: Specular Maps
+- We modify the texture class to make it able to hold more than one texture using the slot GLuint
+- We modify the program to render a plane with the two textures: wood and specular
+
+![image](https://github.com/user-attachments/assets/cf801e92-9e34-4f51-9ce4-4af4518f0a09)
+
+
 # Iteration 6: Phong Lighting
 - Changed the Camera class to support updates to the camera matrix.
 - Added Phong Lighting where: Ambient is hard coded, Diffuse is calculated using the dot product between the lightdirection and the normal, and specular is calculated using the dot product between the reflected ray (light direction wrt to normal) and the viewdirection from the camera. 
