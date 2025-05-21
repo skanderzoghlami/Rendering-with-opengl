@@ -5,7 +5,7 @@ layout (location = 2) in vec2 aTexture;
 layout (location = 3) in vec3 aNormal;
 
 out vec3 color ;
-out vec2 textCoord ;
+out vec2 texCoord ;
 out vec3 Normal;
 out vec3 crntPos; // For specular lighting
 
@@ -20,6 +20,6 @@ void main() {
     gl_Position =  camMatrix * vec4(crntPos, 1.0);
 
     color = aColor;
-    textCoord = aTexture;
+    texCoord = aTexture;
     Normal = aNormal;
 }

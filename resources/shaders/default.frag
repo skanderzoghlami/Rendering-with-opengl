@@ -9,6 +9,8 @@ in vec3 crntPos;
 
 // FROM MAIN
 uniform sampler2D tex0;
+uniform sampler2D tex1;
+
 uniform vec4 lightColor;
 uniform vec3 lightPos;
 uniform vec3 camPos;
@@ -17,12 +19,12 @@ void main() {
     // Amnient is hard coded
     float ambient = 0.20f;
 
-    // diffuse Calculatio
+    // diffuse Calculation
     vec3 normal = normalize(Normal);
     vec3 lightDirection = normalize(lightPos - crntPos);
     float diffuse = max(dot(normal, lightDirection), 0.0f);
 
-    // specular Calculatio
+    // specular Calculation
     float specularLight = 0.50f; // Max value
     vec3 viewDirection = normalize(camPos - crntPos);
     vec3 reflectionDirection = reflect(-lightDirection, normal);
@@ -30,5 +32,5 @@ void main() {
     float specular = specAmount * specularLight;
 
     // Summing All Phong's components
-    FragColor = texture(tex0, texCoord) * lightColor * (diffuse + ambient + specular);
+    FragColor = (texture(tex0, texCoord) * (diffuse + ambient) + (texture(tex1,texCoord) * specular))  * lightColor;
 }
