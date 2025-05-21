@@ -21,7 +21,11 @@ cmake ..
 make   
 ./OGLRender </pre>
 
-
+# Iteration 8: Different Lighting types
+- Point light is implemented using a quadratic attenuation function where the intensity decreases as we go further from source.
+- Directional Light has no intensity it's same in all directions
+- Spotlight depends of the angle between the lightdirection and the center of the light cone
+![Presentation1](https://github.com/user-attachments/assets/dfc3bc4e-cd75-49db-9646-84529f2058ec)
 
 # Iteration 7: Specular Maps
 - We modify the texture class to make it able to hold more than one texture using the slot GLuint
