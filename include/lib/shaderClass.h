@@ -23,6 +23,8 @@ public:
 	// Deletes the Shader Program
 	void Delete();
     void checkCompileErrors(GLuint shader, const std::string& type);
+	private:
+	void compileErrors(unsigned int shader, const char* type);
 
 };
 #endif
