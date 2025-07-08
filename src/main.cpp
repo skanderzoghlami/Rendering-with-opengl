@@ -53,7 +53,7 @@ int main()
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 	glEnable(GL_DEPTH_TEST);
 	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
-	Model model("resources/models/bunny/scene.gltf");
+	Model model("resources/models/sword/scene.gltf");
 
 
 	// Main loop
@@ -67,8 +67,7 @@ int main()
 		prevTime = crntTime;
 
 		camera.Inputs(window, deltaTime);
-		camera.updateMatrix(45.0f, 0.1f, 100.0f);
-
+		camera.updateMatrix(45.0f, 0.1f, 100.0f);		
 
 		// Activate the shader program
 		model.Draw(shaderProgram, camera);

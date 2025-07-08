@@ -14,11 +14,12 @@ Model::Model(const char* file)
 	{
 		std::cout << "No binary data found in " << file << std::endl;
 	}
-	
-
 	// Traverse all nodes
 	traverseNode(0);
 }
+
+
+
 
 void Model::Draw(Shader& shader, Camera& camera)
 {
@@ -138,7 +139,6 @@ std::vector<unsigned char> Model::getData()
 	std::string bytesText;
 	// check if the buffers key exists in the JSON
 	std::string uri = JSON["buffers"][0]["uri"];
-	printf("URI: %s\n", uri.c_str());
 
 	// Store raw text data into bytesText
 	std::string fileStr = std::string(file);

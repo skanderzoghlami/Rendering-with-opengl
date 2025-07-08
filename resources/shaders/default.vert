@@ -23,7 +23,7 @@ void main() {
     // Outputs the positions/coordinates of all vertices
 
     color = aColor;
-    texCoord = mat2(0.0 , -1.0 , 1.0 ,0.0) * aTex;
+    texCoord = mat2(1.0 , 0.0 , 0.0 ,-1.0) * aTex;
     Normal = aNormal;
     gl_Position =  camMatrix * vec4(crntPos, 1.0);
 }

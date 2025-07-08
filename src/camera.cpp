@@ -35,7 +35,7 @@ void Camera::Matrix(Shader& shader, const char* uniform)
 
 void Camera::Inputs(GLFWwindow* window , float deltatime)
 {
-    speed = 0.5f * deltatime; 
+    speed = 10 * deltatime; 
 	// Handles key inputs
 	if (glfwGetKey(window, GLFW_KEY_W) == GLFW_PRESS)
 	{

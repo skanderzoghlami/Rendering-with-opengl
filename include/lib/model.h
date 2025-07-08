@@ -14,6 +14,7 @@ public:
 	Model(const char* file);
 
 	void Draw(Shader& shader, Camera& camera);
+	
 
 private:
 	// Variables for easy access
