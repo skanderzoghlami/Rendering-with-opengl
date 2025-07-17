@@ -19,6 +19,7 @@ FetchContent_Declare(
   GIT_TAG v0.1.36
 )
 FetchContent_MakeAvailable(glad)
+find_package(assimp REQUIRED)
 
 # Collect source files
 file(GLOB SOURCES
@@ -45,6 +46,7 @@ target_link_libraries(OGLRender
   PRIVATE
     glfw
     glad
+    assimp::assimp
 )
 add_custom_command(TARGET OGLRender POST_BUILD
   COMMAND ${CMAKE_COMMAND} -E copy_directory

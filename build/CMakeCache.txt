@@ -424,6 +424,9 @@ OGLRender_IS_TOP_LEVEL:STATIC=ON
 //Value Computed by CMake
 OGLRender_SOURCE_DIR:STATIC=C:/Users/skander/OneDrive/Bureau/Graphics Programming/Rendering-with-opengl
 
+//The directory containing a CMake configuration file for assimp.
+assimp_DIR:PATH=C:/msys64/mingw64/lib/cmake/assimp-5.3
+
 
 ########################
 # INTERNAL cache entries

@@ -53,7 +53,7 @@ int main()
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 	glEnable(GL_DEPTH_TEST);
 	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
-	Model model("resources/models/sword/scene.gltf");
+	Model model("resources/models/sword/scene.gltf"); // Still works, but now supports many more formats!
 
 
 	// Main loop
