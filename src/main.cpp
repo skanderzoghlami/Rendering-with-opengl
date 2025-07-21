@@ -52,8 +52,11 @@ int main()
 	glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 	glEnable(GL_DEPTH_TEST);
+	glDepthFunc(GL_LESS);
 	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 	Model model("resources/models/sword/scene.gltf"); // Still works, but now supports many more formats!
+	Model model2("resources/models/bunny/scene.gltf"); // Still works, but now supports many more formats!
+
 
 
 	// Main loop
@@ -71,6 +74,7 @@ int main()
 
 		// Activate the shader program
 		model.Draw(shaderProgram, camera);
+		model2.Draw(shaderProgram, camera);
 
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
