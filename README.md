@@ -21,6 +21,16 @@ cmake ..
 make   
 ./OGLRender </pre>
 
+
+# Iteration 9: Loading 3D Models using Assimp
+In this point of the project we diverge from the youtube series, in my project I'll use assimp to load 3D models as it can be easily integrated and it allows support for 40+ types of 3D models and not only GLTF.
+Assimp reads the file, parses the 3D data and uses it to create an "internal scene graph" aiscene, this aiscene has a set of nodes that each have a set of meshes.
+we traverse the nodes and extract all the meshes from them and process each mesh by transforming it into mesh objects as defined in our project's Mesh class.
+
+<img width="767" height="830" alt="image" src="https://github.com/user-attachments/assets/388dff52-f413-4738-bc74-062049213036" />
+
+
+
 # Iteration 8: Different Lighting types
 - Point light is implemented using a quadratic attenuation function where the intensity decreases as we go further from source.
 - Directional Light has no intensity it's same in all directions
