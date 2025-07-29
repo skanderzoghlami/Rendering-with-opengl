@@ -52,24 +52,39 @@ int main()
 	glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
 	glEnable(GL_DEPTH_TEST);
+	glEnable(GL_CULL_FACE);
+	glCullFace(GL_FRONT); 
+	glFrontFace(GL_CCW); // Default: CCW = front face
 	glDepthFunc(GL_LESS);
 	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 	Model model("resources/models/sword/scene.gltf"); // Still works, but now supports many more formats!
 	Model model2("resources/models/bunny/scene.gltf"); // Still works, but now supports many more formats!
 
 
-
+	double totalFPS = 0.0;
+	double totalFrames = 1;
 	// Main loop
 	double prevTime = glfwGetTime();
+	double prevTimeFPS = glfwGetTime();
+	unsigned int frameCount = 0;
 	while (!glfwWindowShouldClose(window))
 	{
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		double crntTime = glfwGetTime();
-		float deltaTime = static_cast<float>(crntTime - prevTime);
-		prevTime = crntTime;
-
-		camera.Inputs(window, deltaTime);
+		float deltaTimeFPS = static_cast<float>(crntTime - prevTimeFPS);
+		frameCount++;
+		if (deltaTimeFPS > 1.0 / 30.0) // 30 FPS
+		{
+			std::string fps = std::to_string(frameCount / deltaTimeFPS);
+			std::string ms  = std::to_string((deltaTimeFPS * 1000.0) / frameCount);
+			totalFrames += frameCount;
+			std::string title = "Skanderender - FPS: " + fps + " - Frame time: " + ms + "ms";
+			glfwSetWindowTitle(window, title.c_str());	
+			prevTimeFPS = crntTime;
+			frameCount = 0;
+			camera.Inputs(window, deltaTimeFPS);
+		}
 		camera.updateMatrix(45.0f, 0.1f, 100.0f);		
 
 		// Activate the shader program
