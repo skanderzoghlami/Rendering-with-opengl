@@ -21,6 +21,14 @@ cmake ..
 make   
 ./OGLRender </pre>
 
+# Iteration 10: Displaying Depth maps
+We have previously enabled depth testing using the depth buffer, each fragment coord will have a Z coordinate, we can display that coordinate in the fragment shader, but the problem is that the depth isn't linear, we would like closer distances to have more precision that farther ones.
+To solve this we linearize the Z value, we can later use logistic depth to better control how fast we go from values closer to zero and closer to 1.
+<img width="782" height="803" alt="image" src="https://github.com/user-attachments/assets/dd2c013c-0d1a-4db3-9337-bb1927224d66" />
+
+
+
+
 
 # Iteration 9: Loading 3D Models using Assimp
 In this point of the project we diverge from the youtube series, in my project I'll use assimp to load 3D models as it can be easily integrated and it allows support for 40+ types of 3D models and not only GLTF.
