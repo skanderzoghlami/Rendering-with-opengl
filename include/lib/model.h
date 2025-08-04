@@ -10,12 +10,12 @@ class Model
 {
 public:
     Model(const char* path);
-    void Draw(Shader& shader, Camera& camera);
+    void Draw(Shader& shader, Camera& camera , glm::mat4 modelMatrix = glm::mat4(1.0f));
 
 private:
-    std::vector<Mesh> meshes;
     std::string directory;
-    
+    std::vector<Mesh> meshes;
+
     // Prevents textures from being loaded twice
     std::vector<std::string> loadedTexName;
     std::vector<Texture> loadedTex;

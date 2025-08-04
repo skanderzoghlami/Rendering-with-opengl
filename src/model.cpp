@@ -6,10 +6,23 @@ Model::Model(const char* path)
     loadModel(path);
 }
 
-void Model::Draw(Shader& shader, Camera& camera)
+void Model::Draw(Shader& shader, Camera& camera , glm::mat4 modelMatrix )
 {
-    for(unsigned int i = 0; i < meshes.size(); i++)
-        meshes[i].Draw(shader, camera, glm::mat4(1.0f));
+    // Activate the shader
+    shader.Activate();
+    
+    // Set the model matrix in the shader
+    glUniformMatrix4fv(glGetUniformLocation(shader.ID, "model"), 1, GL_FALSE, glm::value_ptr(modelMatrix));
+    
+    // Update camera matrix
+    camera.Matrix(shader, "cameraMatrix");
+    
+    // Draw all meshes
+    for (Mesh& mesh : meshes)
+    {
+        mesh.Draw(shader, camera, modelMatrix);
+    }
+
 }
 
 void Model::loadModel(std::string path)

@@ -37,7 +37,7 @@ int main()
 	// Load GLAD so it configures OpenGL
 	gladLoadGL();
 	// Specify the viewport of OpenGL in the Window
-	// In this case the viewport goes from x = 0, y = 0, to x = 800, y = 800
+	// In this case the viewport goes from (x,y) = (0,0), to (800,800) (0,0) is bottom left corner
 	glViewport(0, 0, width, height);
 
 	Shader shaderProgram("resources/shaders/default.vert", "resources/shaders/default.frag");
@@ -49,14 +49,18 @@ int main()
 
 
 	shaderProgram.Activate();
+	/* Light Related Uniforms to pass to the shader */
 	glUniform4f(glGetUniformLocation(shaderProgram.ID, "lightColor"), lightColor.x, lightColor.y, lightColor.z, lightColor.w);
 	glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
+	/* Faces sorting via  depth testing / culling */
 	glEnable(GL_DEPTH_TEST);
 	glEnable(GL_CULL_FACE);
 	glCullFace(GL_FRONT); 
 	glFrontFace(GL_CCW); // Default: CCW = front face
 	glDepthFunc(GL_LESS);
+	/* Camera */
 	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
+	/* 3D Models */
 	Model model("resources/models/sword/scene.gltf"); // Still works, but now supports many more formats!
 	Model model2("resources/models/bunny/scene.gltf"); // Still works, but now supports many more formats!
 
@@ -69,6 +73,9 @@ int main()
 	unsigned int frameCount = 0;
 	while (!glfwWindowShouldClose(window))
 	{
+		lightPos = camera.Position;
+		glUniform3f(glGetUniformLocation(shaderProgram.ID, "lightPos"), lightPos.x, lightPos.y, lightPos.z);
+
 		glClearColor(0.07f, 0.13f, 0.17f, 1.0f);
 		glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 		double crntTime = glfwGetTime();
@@ -88,9 +95,11 @@ int main()
 		camera.updateMatrix(45.0f, 0.1f, 100.0f);		
 
 		// Activate the shader program
-		model.Draw(shaderProgram, camera);
-		model2.Draw(shaderProgram, camera);
-
+		glm::vec3 TimedPosupdate = glm::vec3(sin(crntTime), 0.0f, cos(crntTime));
+		glm::mat4 model1Matrix = glm::rotate(glm::mat4(1.0f), static_cast<float>(crntTime), glm::vec3(0.0f, 0.0f, 1.0f));
+		model.Draw(shaderProgram, camera , glm::translate(model1Matrix, glm::vec3(0.0f, 0.0f, 0.0f)));
+		
+		model2.Draw(shaderProgram, camera , glm::translate(glm::mat4(1.0f), -TimedPosupdate));
 		// Swap the back buffer with the front buffer
 		glfwSwapBuffers(window);
 		// Take care of all GLFW events
