@@ -187,11 +187,14 @@ int main()
 		camera.updateMatrix(45.0f, 0.1f, 100.0f);		
 
 		// Activate the shader program
+		shaderProgram.Activate();
+		glUniform1f(glGetUniformLocation(shaderProgram.ID, "time"), static_cast<float>(crntTime));
+		
 		glm::vec3 TimedPosupdate = glm::vec3(sin(crntTime), 0.0f, cos(crntTime));
 		glm::mat4 model1Matrix = glm::rotate(glm::mat4(1.0f), static_cast<float>(crntTime), glm::vec3(0.0f, 0.0f, 1.0f));
-		model.Draw(shaderProgram, camera , glm::translate(model1Matrix, glm::vec3(0.0f, 0.0f, 0.0f)));
-		
-		model2.Draw(shaderProgram, camera , glm::translate(glm::mat4(1.0f), -TimedPosupdate));
+		model.Draw(shaderProgram, camera , glm::translate(model1Matrix, glm::vec3(0.0f, 0.0f, 0.0f)) , false);
+
+		model2.Draw(shaderProgram, camera , glm::translate(glm::mat4(1.0f), -TimedPosupdate), true);
 
 		glDepthFunc(GL_LEQUAL); // Set depth function to less than or equal to ensure skybox is rendered last
 		skyboxShader.Activate();

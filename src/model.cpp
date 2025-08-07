@@ -6,7 +6,7 @@ Model::Model(const char* path)
     loadModel(path);
 }
 
-void Model::Draw(Shader& shader, Camera& camera , glm::mat4 modelMatrix )
+void Model::Draw(Shader& shader, Camera& camera , glm::mat4 modelMatrix  , bool instanced)
 {
     // Activate the shader
     shader.Activate();
@@ -20,7 +20,7 @@ void Model::Draw(Shader& shader, Camera& camera , glm::mat4 modelMatrix )
     // Draw all meshes
     for (Mesh& mesh : meshes)
     {
-        mesh.Draw(shader, camera, modelMatrix);
+        mesh.Draw(shader, camera, modelMatrix, instanced);
     }
 
 }
