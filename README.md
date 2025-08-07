@@ -21,6 +21,18 @@ cmake ..
 make   
 ./OGLRender </pre>
 
+
+
+# Iteration 10: Adding a Skybox
+
+We need 6 photos of the skybox, we declare a list of indexed vertices that define a cube, attach textures to each side of the cube, define the VAO / VBO and EBO createe the shaders for the skybox and draw it.
+
+<img width="835" height="795" alt="image" src="https://github.com/user-attachments/assets/25a9b1c1-9028-4c1c-a839-4f13dd3b3ad0" />
+
+
+
+
+
 # Iteration 10: Displaying Depth maps
 We have previously enabled depth testing using the depth buffer, each fragment coord will have a Z coordinate, we can display that coordinate in the fragment shader, but the problem is that the depth isn't linear, we would like closer distances to have more precision that farther ones.
 To solve this we linearize the Z value, we can later use logistic depth to better control how fast we go from values closer to zero and closer to 1.
