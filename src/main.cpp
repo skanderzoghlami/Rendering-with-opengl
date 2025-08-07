@@ -42,6 +42,7 @@ unsigned int skyboxIndices[] =
 	3, 7, 6,
 	6, 2, 3
 };
+unsigned int samples = 8;
 
 int main()
 {
@@ -52,6 +53,7 @@ int main()
 	// In this case we are using OpenGL 3.3
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MAJOR, 3);
 	glfwWindowHint(GLFW_CONTEXT_VERSION_MINOR, 3);
+	glfwWindowHint(GLFW_SAMPLES, samples);
 	// Tell GLFW we are using the CORE profile
 	// So that means we only have the modern functions
 	glfwWindowHint(GLFW_OPENGL_PROFILE, GLFW_OPENGL_CORE_PROFILE);
@@ -93,6 +95,7 @@ int main()
 	glCullFace(GL_FRONT); 
 	glFrontFace(GL_CCW); // Default: CCW = front face
 	glDepthFunc(GL_LESS);
+	glEnable(GL_MULTISAMPLE); // Enable MSAA
 	/* Camera */
 	Camera camera(width, height, glm::vec3(0.0f, 0.0f, 2.0f));
 	/* 3D Models */
