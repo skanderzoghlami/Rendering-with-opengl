@@ -22,15 +22,18 @@ make
 ./OGLRender </pre>
 
 
+# Iteration 12: Instancing
+Add instancing using glDrawElementsInstanced while defining the number of instances, the positions are then defined using the index of the isntance inside the vertex shader.
+Alternative way 1: pass a transformation matrix using uniforms (but it's not very good as uniforms can't hold much data)
+Alternative way 2: Create a VBO to hold the transformation matrices and attach it to the VAO, data will then be passed as a layout to the vertex shader.
+<img width="780" height="826" alt="image" src="https://github.com/user-attachments/assets/d51568be-64c9-4981-a6a3-6e5a7f5775d3" />
 
-# Iteration 10: Adding a Skybox
+
+# Iteration 11: Adding a Skybox
 
 We need 6 photos of the skybox, we declare a list of indexed vertices that define a cube, attach textures to each side of the cube, define the VAO / VBO and EBO createe the shaders for the skybox and draw it.
 
 <img width="835" height="795" alt="image" src="https://github.com/user-attachments/assets/25a9b1c1-9028-4c1c-a839-4f13dd3b3ad0" />
-
-
-
 
 
 # Iteration 10: Displaying Depth maps
