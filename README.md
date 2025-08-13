@@ -26,6 +26,8 @@ make
 Add instancing using glDrawElementsInstanced while defining the number of instances, the positions are then defined using the index of the isntance inside the vertex shader.
 Alternative way 1: pass a transformation matrix using uniforms (but it's not very good as uniforms can't hold much data)
 Alternative way 2: Create a VBO to hold the transformation matrices and attach it to the VAO, data will then be passed as a layout to the vertex shader.
+
+
 <img width="780" height="826" alt="image" src="https://github.com/user-attachments/assets/d51568be-64c9-4981-a6a3-6e5a7f5775d3" />
 
 
