@@ -22,6 +22,16 @@ make
 ./OGLRender </pre>
 
 
+# Iteration 13: Adding Framebuffer and Postprocessing
+We create a framebuffer object, we attach a texture to it and define the vertices of a small rectangle, we create the VAO attach to it a VBO and an EBO containing the geometry information of the rectangle,after that inside the main, we bind the framebuffer to fill the texture which whatever is gonna be drawn, we draw everything, and then we render the rectangle using the texture created in the last pass.
+Inside the fragment shader, we define what we want to be postprocessed in this case we do an edge detection kernel.
+
+<img width="793" height="832" alt="image" src="https://github.com/user-attachments/assets/b246dfd9-20c3-4ee8-b84c-d0d72710ee46" />
+
+
+
+
+
 # Iteration 12: Instancing
 Add instancing using glDrawElementsInstanced while defining the number of instances, the positions are then defined using the index of the isntance inside the vertex shader.
 Alternative way 1: pass a transformation matrix using uniforms (but it's not very good as uniforms can't hold much data)
